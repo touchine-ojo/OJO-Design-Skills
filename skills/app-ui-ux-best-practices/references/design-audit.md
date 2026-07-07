@@ -268,6 +268,9 @@ Check these 5 traits first:
 - [ ] No sparkle decorations (✨) around elements
 - [ ] No AI-generated cartoon avatars
 - [ ] No mixed icon libraries (inconsistent styles)
+- [ ] Every meaningful image slot uses or specifies a real source: user/brand asset, official media, websearch/image search, Dribbble/Behance/Mobbin/UINotes artwork, Unsplash/Pexels/Wikimedia-style photography, product screenshot, user-content data, or generated bitmap
+- [ ] Images depict the actual subject/category/state; no gray boxes, "Image" labels, abstract gradient placeholders, generic laptop mockups, or dark blurred stock backgrounds
+- [ ] Image specs include crop/focal point, alt text, and fallback behavior
 
 ### The Golden Rule Test
 

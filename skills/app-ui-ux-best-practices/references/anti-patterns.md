@@ -633,6 +633,18 @@ Purple/violet as primary accent is the **#1 AI-generated design signature**. AI 
 | **Loading** | Skeleton matching content layout |
 | **Text placeholder** | Realistic fake content |
 
+### ✅ Real Image Acquisition
+
+When an interface needs images, source or create assets that depict the actual subject. Valid paths:
+- User-provided or brand-owned assets.
+- Official product pages, media kits, app screenshots, or source-owned content.
+- `websearch` / image search for domain-specific photography or screenshots.
+- Dribbble, Behance, Mobbin, or UINotes for design artwork and UI reference images.
+- Unsplash, Pexels, Wikimedia, or similar sources for real photography when the product needs photographic content.
+- Generated bitmap assets when no suitable real asset exists, as long as the image clearly depicts the subject.
+
+If no credible image can be sourced or generated, remove the image slot or use a non-image layout. Do not fill the slot with gray rectangles, abstract gradient meshes, generic laptop mockups, or decorative SVGs pretending to be content.
+
 ---
 
 ## Layout Anti-Patterns

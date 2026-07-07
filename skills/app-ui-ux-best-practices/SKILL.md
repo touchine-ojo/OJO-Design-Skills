@@ -17,6 +17,8 @@ Create cohesive, professional UI design systems. For brand-driven products, pick
 
 **Tactile quality:** Users should feel an instinctive desire to touch the interface. Surfaces must convey material reality through shadow, depth, and texture.
 
+**Real visual assets:** When a screen needs imagery, use real, subject-specific photographs, screenshots, product renders, map/media thumbnails, or generated bitmap assets that clearly depict the actual thing. Do not use gray boxes, "Image" labels, generic gradient blobs, fake stock smiles, or decorative SVGs as a substitute for real visual content.
+
 **Silence between notes:** Whitespace is not empty space. It is active, guiding attention and creating rhythm. Generous spacing is a feature, not a waste.
 
 ## Language Rule (HIGHEST PRIORITY - STRICTLY ENFORCED)
@@ -104,7 +106,7 @@ Determine which track to follow based on the product's core value proposition:
 ## Step 1: Inspiration Research (MANDATORY)
 
 ### Standard Research (no user reference)
-You MUST use `websearch` to find 3-5 high-quality design references. Do NOT use `unsplash_search`.
+You MUST use `websearch` to find 3-5 high-quality design references. Do not use generic photo search as a shortcut for design direction; Unsplash-style sources are valid later for real photographic assets, not as the only style research.
 
 **Search**: "best [industry] app design 2026" + "site:mobbin.com OR site:uinotes.com OR site:dribbble.com OR site:behance.net"
 
@@ -113,11 +115,13 @@ You MUST use `websearch` to find 3-5 high-quality design references. Do NOT use 
 ### Reference-Informed Research (user provided reference image/URL/Figma)
 When the user provided a visual reference for a new product (Scenario A-Ref):
 - **Analyze the user's reference FIRST** — this is the primary calibration source. If it's a URL, use `firecrawl_scrape` with the correct format: for design platforms (Dribbble/Behance/Mobbin/UINotes) use `formats: ["images"]` to extract actual design artwork; for product official websites use `formats: ["screenshot"]` (optionally add `"branding"` for color/typography data). Do NOT use `screenshot` format on design platform pages — a webpage screenshot captures page chrome, not the design reference. If it's a screenshot/image, analyze visual characteristics directly: dominant colors, typography feel, spacing density, card style, light/dark mode, overall mood.
-- Optionally supplement with 1-2 `websearch` results to identify what design tradition the reference belongs to. Do NOT use `unsplash_search`.
+- Optionally supplement with 1-2 `websearch` results to identify what design tradition the reference belongs to. Use real-photo sources only when the product needs photographic content assets.
 - The reference analysis directly informs the direction options (see Style Direction Confirmation below).
 
 ### Common rules (both modes)
 **Research only — internal use:** Use `websearch` and optionally `firecrawl_scrape` for internal style calibration. All fetched images are for internal analysis only — **never output any image to the user during Inspiration Research or direction option steps.**
+
+**Real image requirement:** Once implementation/specification reaches actual screens, any image slot must name or use a concrete asset type tied to the product domain: real product photos, venue/food/travel photos, real UI screenshots, user-uploaded media, realistic avatars, album art, listing thumbnails, maps, or generated bitmap imagery that depicts the subject. Valid acquisition paths include user-provided assets, official product/media pages, `websearch`/image search, Dribbble/Behance/Mobbin/UINotes for design artwork, Unsplash/Pexels/Wikimedia-style sources for real photography, and generated bitmap images when no suitable real asset exists. If no credible image is available, redesign the layout so it does not depend on imagery. Do NOT ship decorative placeholders.
 
 **Output**: Use internal research conclusions to ground direction options. Direction options must be presented as plain text only.
 
@@ -246,6 +250,8 @@ For other methodologies, the Brief carries equivalent fields adapted to that met
 
 **Reference Images as Palette Source**: Extract and adapt color schemes from reference images. User-provided references take priority.
 
+**Image Asset Rules**: Define whether each meaningful image comes from user-provided assets, official/source-owned assets, websearch/image search, Dribbble/Behance-style design artwork, Unsplash/Pexels/Wikimedia-style real photography, product screenshots, generated bitmap assets, or user/content data. Images must reveal the actual subject and support the product's information architecture; they are content, not decoration. Avoid dark blurred stock backgrounds, abstract mesh placeholders, generic laptop mockups, and product cards with fake gray boxes.
+
 **Color Depth Rules**:
 - Primary/Accent instantly recognizable, high contrast, logo-worthy
 - Background is atmosphere (use `#FAF8F5`, `#F5F5F7`, `#1A1A1B`, not pure black/white)
@@ -337,8 +343,9 @@ Produce complete specification:
 4. Spacing Scale
 5. Component Specifications (all states, Tailwind classes)
 6. Animation Guidelines (spring physics parameters)
-7. Icon Guidelines (same library, same style, same stroke weight 1.5-2px, 24x24 grid)
-8. Recommended Libraries
+7. Real Image / Asset Requirements (source type, subject, crop, alt text, fallback behavior)
+8. Icon Guidelines (same library, same style, same stroke weight 1.5-2px, 24x24 grid)
+9. Recommended Libraries
 
 **Quality Gate**: Before delivery, read `references/design-audit.md` and apply all quality checks. Address issues before presenting to user.
 
@@ -366,6 +373,8 @@ Produce complete specification:
 **Do NOT use default Tailwind color names** — specify exact hex codes.
 
 **Quality Standards**: Icons (same library, same style, same stroke weight 1.5-2px, 24x24 grid), Contrast (text/background >= 4.5:1), Body text (>= 14sp), Brand color (8-12% surface, EXEMPT: >30% allowed in Neo-brutalism/Marketing)
+
+**Real Image Standard**: If the UI shows imagery, it must be real or credibly subject-specific. Product, listing, venue, food, travel, profile, media, portfolio, and hero imagery must depict the actual object/state/person/place/category being represented. Use purposeful crops, visible focal points, and alt text. If credible imagery cannot be sourced or generated, remove the image slot instead of filling it with placeholder art.
 
 ### Soft Guidelines (Both Tracks)
 
