@@ -30,10 +30,22 @@ DeepCode:
 curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target deepcode
 ```
 
+WorkBuddy:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target workbuddy
+```
+
 OpenCode:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target opencode
+```
+
+Generic Agent Skills:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target generic
 ```
 
 Default install locations:
@@ -44,7 +56,9 @@ Default install locations:
 | Claude Code | `${CLAUDE_HOME:-~/.claude}/skills` |
 | ZCode | `${AGENTS_HOME:-~/.agents}/skills` |
 | DeepCode | `${AGENTS_HOME:-~/.agents}/skills` |
+| WorkBuddy | `${WORKBUDDY_HOME:-~/.workbuddy}/skills` |
 | OpenCode | `${OPENCODE_CONFIG_DIR:-~/.config/opencode}/skills` |
+| Generic Agent Skills | `${AGENTS_HOME:-~/.agents}/skills` |
 
 Restart or reload the client if it does not pick up the new skills.
 

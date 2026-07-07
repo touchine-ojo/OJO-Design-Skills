@@ -19,7 +19,7 @@ Usage:
   curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target codex
 
 Options:
-  --target <name>      codex, claude-code, zcode, deepcode, or opencode. Default: codex
+  --target <name>      codex, claude-code, zcode, deepcode, workbuddy, opencode, or generic. Default: codex
   --home <path>        Target tool home/config directory
   --codex-home <path>  Legacy alias for --target codex --home <path>
   --dest <path>        Skills install directory. Overrides --home
@@ -33,7 +33,8 @@ Options:
 Environment:
   CODEX_HOME                 Codex home override. Default: ~/.codex
   CLAUDE_HOME                Claude Code home override. Default: ~/.claude
-  AGENTS_HOME                ZCode/DeepCode shared home override. Default: ~/.agents
+  AGENTS_HOME                ZCode/DeepCode/generic shared home override. Default: ~/.agents
+  WORKBUDDY_HOME             WorkBuddy home override. Default: ~/.workbuddy
   OPENCODE_CONFIG_DIR        OpenCode config override. Default: ~/.config/opencode
   OJO_UI_UX_SKILLS_TARGET    Target override
   OJO_UI_UX_SKILLS_REF       Git ref override for remote install
@@ -73,8 +74,14 @@ normalize_target() {
     deepcode|deep-code)
       printf 'deepcode\n'
       ;;
+    workbuddy|work-buddy)
+      printf 'workbuddy\n'
+      ;;
     opencode|open-code)
       printf 'opencode\n'
+      ;;
+    generic|agent|agents|agent-skills)
+      printf 'generic\n'
       ;;
     *)
       return 1
@@ -96,8 +103,14 @@ target_display_name() {
     deepcode)
       printf 'DeepCode\n'
       ;;
+    workbuddy)
+      printf 'WorkBuddy\n'
+      ;;
     opencode)
       printf 'OpenCode\n'
+      ;;
+    generic)
+      printf 'Generic Agent Skills\n'
       ;;
   esac
 }
@@ -110,8 +123,11 @@ target_home_default() {
     claude-code)
       printf '%s\n' "${CLAUDE_HOME:-${HOME}/.claude}"
       ;;
-    zcode|deepcode)
+    zcode|deepcode|generic)
       printf '%s\n' "${AGENTS_HOME:-${HOME}/.agents}"
+      ;;
+    workbuddy)
+      printf '%s\n' "${WORKBUDDY_HOME:-${HOME}/.workbuddy}"
       ;;
     opencode)
       printf '%s\n' "${OPENCODE_CONFIG_DIR:-${OPENCODE_HOME:-${XDG_CONFIG_HOME:-${HOME}/.config}/opencode}}"
@@ -175,7 +191,7 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-normalized_target="$(normalize_target "${TARGET}")" || die "unsupported target: ${TARGET}. Use codex, claude-code, zcode, deepcode, or opencode."
+normalized_target="$(normalize_target "${TARGET}")" || die "unsupported target: ${TARGET}. Use codex, claude-code, zcode, deepcode, workbuddy, opencode, or generic."
 TARGET="${normalized_target}"
 TARGET_DISPLAY="$(target_display_name "${TARGET}")"
 
