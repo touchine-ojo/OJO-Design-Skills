@@ -6,20 +6,33 @@ Reusable UI/UX skills for OJO design and product agents.
 
 Install all skills for your agent client:
 
+Codex:
+
 ```bash
-# Codex
 curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target codex
+```
 
-# Claude Code
+Claude Code:
+
+```bash
 curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target claude-code
+```
 
-# ZCode
+ZCode:
+
+```bash
 curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target zcode
+```
 
-# DeepCode
+DeepCode:
+
+```bash
 curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target deepcode
+```
 
-# OpenCode
+OpenCode:
+
+```bash
 curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target opencode
 ```
 
@@ -37,20 +50,33 @@ Restart or reload the client if it does not pick up the new skills.
 
 Useful variants:
 
+Replace existing installed copies without creating backups:
+
 ```bash
-# Replace existing installed copies without creating backups
 curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target codex --force
+```
 
-# Install to a custom client home/config directory
+Install to a custom client home/config directory:
+
+```bash
 curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | CLAUDE_HOME=/path/to/.claude bash -s -- --target claude-code
+```
 
-# Install to an explicit skills directory
+Install to an explicit skills directory:
+
+```bash
 curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target opencode --dest /path/to/skills
+```
 
-# Install from a local checkout
+Install from a local checkout:
+
+```bash
 ./scripts/install.sh
+```
 
-# Preview without writing files
+Preview without writing files:
+
+```bash
 ./scripts/install.sh --target opencode --dry-run
 ```
 
