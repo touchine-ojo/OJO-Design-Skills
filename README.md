@@ -1,10 +1,20 @@
+<div align="center">
+
 # OJO Design Skills
 
-Reusable UI/UX design skills for AI coding agents — Codex, Claude Code, ZCode, and more.
+**Reusable UI/UX design skills for AI coding agents — Codex, Claude Code, ZCode, and more.**
 
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Clients](https://img.shields.io/badge/clients-7-success)
-![Skills](https://img.shields.io/badge/skills-2-orange)
+[![License: MIT](https://img.shields.io/github/license/touchine-ojo/OJO-Design-Skills?color=blue)](./LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/touchine-ojo/OJO-Design-Skills?style=flat&color=yellow)](https://github.com/touchine-ojo/OJO-Design-Skills/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/touchine-ojo/OJO-Design-Skills?color=brightgreen)](https://github.com/touchine-ojo/OJO-Design-Skills/commits/main)
+[![Clients](https://img.shields.io/badge/clients-7-success)](#quick-start)
+[![Skills](https://img.shields.io/badge/skills-2-orange)](#skills)
+
+**English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja-JP.md) · [한국어](./README.ko-KR.md) · [Español](./README.es-ES.md)
+
+</div>
+
+---
 
 OJO Design Skills is a drop-in skill bundle that teaches your AI coding agent how to make real design decisions — not generic "AI-looking" layouts. Install once, and your agent gains a complete UI/UX methodology: brand-driven visual direction, design tokens, component recipes, motion specs, and a strict anti-pattern guardrail that keeps output from looking like slop.
 
