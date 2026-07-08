@@ -2,9 +2,11 @@
 
 set -euo pipefail
 
-REPO_SLUG="touchine-ojo/OJO-UI-UX-skills"
-REF="${OJO_UI_UX_SKILLS_REF:-main}"
-TARGET="${OJO_UI_UX_SKILLS_TARGET:-codex}"
+REPO_SLUG="touchine-ojo/OJO-Design-Skills"
+# New canonical env var names; fall back to the legacy OJO_UI_UX_SKILLS_* names
+# so existing user/CI config keeps working after the rename.
+REF="${OJO_DESIGN_SKILLS_REF:-${OJO_UI_UX_SKILLS_REF:-main}}"
+TARGET="${OJO_DESIGN_SKILLS_TARGET:-${OJO_UI_UX_SKILLS_TARGET:-codex}}"
 TOOL_HOME_DIR=""
 DEST_DIR=""
 SOURCE_DIR=""
@@ -16,14 +18,14 @@ usage() {
   cat <<'EOF'
 Usage:
   scripts/install.sh [options]
-  curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target codex
+  curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-Design-Skills/main/scripts/install.sh | bash -s -- --target codex
 
 Options:
   --target <name>      codex, claude-code, zcode, deepcode, workbuddy, opencode, or generic. Default: codex
   --home <path>        Target tool home/config directory
   --codex-home <path>  Legacy alias for --target codex --home <path>
   --dest <path>        Skills install directory. Overrides --home
-  --source <path>      Local OJO-UI-UX-skills checkout to install from
+  --source <path>      Local OJO-Design-Skills checkout to install from
   --ref <ref>          Git ref for curl/remote install. Default: main
   --skill <name>       Install one skill. Can be repeated. Default: all skills
   --force              Replace existing skill dirs without making backups
@@ -36,17 +38,17 @@ Environment:
   AGENTS_HOME                ZCode/DeepCode/generic shared home override. Default: ~/.agents
   WORKBUDDY_HOME             WorkBuddy home override. Default: ~/.workbuddy
   OPENCODE_CONFIG_DIR        OpenCode config override. Default: ~/.config/opencode
-  OJO_UI_UX_SKILLS_TARGET    Target override
-  OJO_UI_UX_SKILLS_REF       Git ref override for remote install
+  OJO_DESIGN_SKILLS_TARGET   Target override (legacy: OJO_UI_UX_SKILLS_TARGET)
+  OJO_DESIGN_SKILLS_REF      Git ref override for remote install (legacy: OJO_UI_UX_SKILLS_REF)
 EOF
 }
 
 log() {
-  printf '[ojo-ui-ux-skills] %s\n' "$*"
+  printf '[ojo-design-skills] %s\n' "$*"
 }
 
 die() {
-  printf '[ojo-ui-ux-skills] ERROR: %s\n' "$*" >&2
+  printf '[ojo-design-skills] ERROR: %s\n' "$*" >&2
   exit 1
 }
 
@@ -294,7 +296,7 @@ for skill_name in "${SELECTED_SKILLS[@]}"; do
   log "installed: ${skill_name}"
 done
 
-manifest_path="${DEST_DIR}/.ojo-ui-ux-skills-install.json"
+manifest_path="${DEST_DIR}/.ojo-design-skills-install.json"
 if [[ "${DRY_RUN}" != "true" ]]; then
   {
     printf '{\n'
