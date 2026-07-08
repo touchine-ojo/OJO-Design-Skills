@@ -29,6 +29,38 @@ It is agent-agnostic and ships with a single installer that targets every major 
 - **Real-imagery requirement.** Any screen that shows imagery must use real, subject-specific assets — no decorative placeholders, fake stock smiles, or gradient blobs.
 - **Code-grade output.** Components resolve to atomic Tailwind class strings with an 8-state interaction model; motion uses spring physics, not fixed curves.
 
+## Showcase
+
+The same brief, with and without these skills installed. *(Placeholders — see [`docs/comparison-prompts.md`](./docs/comparison-prompts.md) to regenerate them.)*
+
+<table>
+  <tr>
+    <th>Without OJO Skills</th>
+    <th>With OJO Skills</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="./docs/images/showcase-1-without.svg" alt="Coffee app home without OJO Skills" width="390"></td>
+    <td align="center"><img src="./docs/images/showcase-1-with.svg" alt="Coffee app home with OJO Skills" width="390"></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><sub><b>① Overall look</b> — a generic gradient hero with "Image" placeholder boxes vs. a brand-grounded layout with real photography.</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./docs/images/showcase-2-without.svg" alt="Component spec without OJO Skills" width="390"></td>
+    <td align="center"><img src="./docs/images/showcase-2-with.svg" alt="Component spec with OJO Skills" width="390"></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><sub><b>② Component detail</b> — vague prose vs. atomic Tailwind classes with the full 8-state model and spring physics.</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./docs/images/showcase-3-convention.svg" alt="Convention Track output" width="390"></td>
+    <td align="center"><img src="./docs/images/showcase-3-innovation.svg" alt="Innovation Track output" width="390"></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><sub><b>③ Two-track coverage</b> — the same skill produces a restrained SaaS utility (Convention) and a dramatic brand store (Innovation).</sub></td>
+  </tr>
+</table>
+
 ## Quick start
 
 Install all skills with one command — replace `<client>` with your agent:
