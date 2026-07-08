@@ -31,33 +31,33 @@ It is agent-agnostic and ships with a single installer that targets every major 
 
 ## Showcase
 
-The same brief, with and without these skills installed. *(Placeholders — see [`docs/comparison-prompts.md`](./docs/comparison-prompts.md) to regenerate them.)*
+The same brief, with and without these skills installed. *(Rows ②③ are placeholders — see [`docs/comparison-prompts.md`](./docs/comparison-prompts.md) to regenerate them.)*
 
 <table>
   <tr>
-    <th>Without OJO Skills</th>
     <th>With OJO Skills</th>
+    <th>Without OJO Skills</th>
   </tr>
   <tr>
-    <td align="center"><img src="./docs/images/showcase-1-without.svg" alt="Coffee app home without OJO Skills" width="390"></td>
-    <td align="center"><img src="./docs/images/showcase-1-with.svg" alt="Coffee app home with OJO Skills" width="390"></td>
+    <td align="center"><img src="./docs/images/showcase-1-with.gif" alt="Coffee app home with OJO Skills" width="360"></td>
+    <td align="center"><img src="./docs/images/showcase-1-without.gif" alt="Coffee app home without OJO Skills" width="360"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>① Overall look</b> — a generic gradient hero with "Image" placeholder boxes vs. a brand-grounded layout with real photography.</sub></td>
+    <td colspan="2" align="center"><sub><b>① Overall look</b> — a brand-grounded layout with real photography vs. a generic gradient hero with "Image" placeholder boxes.</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="./docs/images/showcase-2-without.svg" alt="Component spec without OJO Skills" width="390"></td>
     <td align="center"><img src="./docs/images/showcase-2-with.svg" alt="Component spec with OJO Skills" width="390"></td>
+    <td align="center"><img src="./docs/images/showcase-2-without.svg" alt="Component spec without OJO Skills" width="390"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>② Component detail</b> — vague prose vs. atomic Tailwind classes with the full 8-state model and spring physics.</sub></td>
+    <td colspan="2" align="center"><sub><b>② Component detail</b> — atomic Tailwind classes with the full 8-state model and spring physics vs. vague prose.</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="./docs/images/showcase-3-convention.svg" alt="Convention Track output" width="390"></td>
     <td align="center"><img src="./docs/images/showcase-3-innovation.svg" alt="Innovation Track output" width="390"></td>
+    <td align="center"><img src="./docs/images/showcase-3-convention.svg" alt="Convention Track output" width="390"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>③ Two-track coverage</b> — the same skill produces a restrained SaaS utility (Convention) and a dramatic brand store (Innovation).</sub></td>
+    <td colspan="2" align="center"><sub><b>③ Two-track coverage</b> — the same skill produces a dramatic brand store (Innovation) and a restrained SaaS utility (Convention).</sub></td>
   </tr>
 </table>
 

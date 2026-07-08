@@ -31,33 +31,33 @@ OJO Design Skills 是一个即插即用的技能包,让你的 AI 编程代理学
 
 ## 效果展示
 
-同一份需求,装与不装这些技能的对比。*(占位图 —— 见 [`comparison-prompts.md`](./comparison-prompts.md) 重新生成。)*
+同一份需求,装与不装这些技能的对比。*(②③ 行为占位图 —— 见 [`comparison-prompts.md`](./comparison-prompts.md) 重新生成。)*
 
 <table>
   <tr>
-    <th>未安装 OJO Skills</th>
     <th>已安装 OJO Skills</th>
+    <th>未安装 OJO Skills</th>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-1-without.svg" alt="未安装时的咖啡 App 首页" width="390"></td>
-    <td align="center"><img src="../images/showcase-1-with.svg" alt="已安装时的咖啡 App 首页" width="390"></td>
+    <td align="center"><img src="../images/showcase-1-with.gif" alt="已安装时的咖啡 App 首页" width="360"></td>
+    <td align="center"><img src="../images/showcase-1-without.gif" alt="未安装时的咖啡 App 首页" width="360"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>① 整体观感</b> —— 千篇一律的渐变 Hero 加 "Image" 灰块占位 vs. 有品牌质感、使用真实摄影的布局。</sub></td>
+    <td colspan="2" align="center"><sub><b>① 整体观感</b> —— 有品牌质感、使用真实摄影的布局 vs. 千篇一律的渐变 Hero 加 "Image" 灰块占位。</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-2-without.svg" alt="未安装时的组件规范" width="390"></td>
     <td align="center"><img src="../images/showcase-2-with.svg" alt="已安装时的组件规范" width="390"></td>
+    <td align="center"><img src="../images/showcase-2-without.svg" alt="未安装时的组件规范" width="390"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>② 组件细节</b> —— 模糊的散文描述 vs. 原子化 Tailwind 类 + 完整 8 状态模型 + 弹簧物理。</sub></td>
+    <td colspan="2" align="center"><sub><b>② 组件细节</b> —— 原子化 Tailwind 类 + 完整 8 状态模型 + 弹簧物理 vs. 模糊的散文描述。</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-3-convention.svg" alt="常规轨道产出" width="390"></td>
     <td align="center"><img src="../images/showcase-3-innovation.svg" alt="创新轨道产出" width="390"></td>
+    <td align="center"><img src="../images/showcase-3-convention.svg" alt="常规轨道产出" width="390"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>③ 双轨道覆盖</b> —— 同一个技能既能产出克制的 SaaS 工具界面(常规轨道),也能产出戏剧化的品牌商店(创新轨道)。</sub></td>
+    <td colspan="2" align="center"><sub><b>③ 双轨道覆盖</b> —— 同一个技能既能产出戏剧化的品牌商店(创新轨道),也能产出克制的 SaaS 工具界面(常规轨道)。</sub></td>
   </tr>
 </table>
 

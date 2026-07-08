@@ -31,33 +31,33 @@ Es agnóstico al agente e incluye un único instalador compatible con todos los 
 
 ## Vitrina
 
-El mismo brief, con y sin estas habilidades instaladas. *(Marcadores de posición — ver [`comparison-prompts.md`](./comparison-prompts.md) para regenerarlos.)*
+El mismo brief, con y sin estas habilidades instaladas. *(Las filas ②③ son marcadores de posición — ver [`comparison-prompts.md`](./comparison-prompts.md) para regenerarlos.)*
 
 <table>
   <tr>
-    <th>Sin OJO Skills</th>
     <th>Con OJO Skills</th>
+    <th>Sin OJO Skills</th>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-1-without.svg" alt="Inicio de app de café sin OJO Skills" width="390"></td>
-    <td align="center"><img src="../images/showcase-1-with.svg" alt="Inicio de app de café con OJO Skills" width="390"></td>
+    <td align="center"><img src="../images/showcase-1-with.gif" alt="Inicio de app de café con OJO Skills" width="360"></td>
+    <td align="center"><img src="../images/showcase-1-without.gif" alt="Inicio de app de café sin OJO Skills" width="360"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>① Aspecto general</b> — un Hero con degradado genérico y cajas "Image" de marcador vs. un diseño con identidad de marca y fotografía real.</sub></td>
+    <td colspan="2" align="center"><sub><b>① Aspecto general</b> — un diseño con identidad de marca y fotografía real vs. un Hero con degradado genérico y cajas "Image" de marcador.</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-2-without.svg" alt="Especificación de componente sin OJO Skills" width="390"></td>
     <td align="center"><img src="../images/showcase-2-with.svg" alt="Especificación de componente con OJO Skills" width="390"></td>
+    <td align="center"><img src="../images/showcase-2-without.svg" alt="Especificación de componente sin OJO Skills" width="390"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>② Detalle de componente</b> — prosa vaga vs. clases atómicas de Tailwind con el modelo completo de 8 estados y física de resortes.</sub></td>
+    <td colspan="2" align="center"><sub><b>② Detalle de componente</b> — clases atómicas de Tailwind con el modelo completo de 8 estados y física de resortes vs. prosa vaga.</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-3-convention.svg" alt="Salida de la Vía Convencional" width="390"></td>
     <td align="center"><img src="../images/showcase-3-innovation.svg" alt="Salida de la Vía Innovadora" width="390"></td>
+    <td align="center"><img src="../images/showcase-3-convention.svg" alt="Salida de la Vía Convencional" width="390"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>③ Cobertura de dos vías</b> — la misma habilidad produce una utilidad SaaS contenida (Convencional) y una tienda de marca dramática (Innovadora).</sub></td>
+    <td colspan="2" align="center"><sub><b>③ Cobertura de dos vías</b> — la misma habilidad produce una tienda de marca dramática (Innovadora) y una utilidad SaaS contenida (Convencional).</sub></td>
   </tr>
 </table>
 

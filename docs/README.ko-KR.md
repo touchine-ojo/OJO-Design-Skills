@@ -31,33 +31,33 @@ OJO Design Skills는 AI 코딩 에이전트에게 진짜 디자인 결정을 내
 
 ## 쇼케이스
 
-동일한 브리프에 이 스킬을 설치했는지 여부의 비교. *(자리표시자 —— [`comparison-prompts.md`](./comparison-prompts.md)에서 다시 생성할 수 있습니다.)*
+동일한 브리프에 이 스킬을 설치했는지 여부의 비교. *(②③ 행은 자리표시자 —— [`comparison-prompts.md`](./comparison-prompts.md)에서 다시 생성할 수 있습니다.)*
 
 <table>
   <tr>
-    <th>OJO Skills 미사용</th>
     <th>OJO Skills 사용</th>
+    <th>OJO Skills 미사용</th>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-1-without.svg" alt="스킬 미사용 커피 앱 홈" width="390"></td>
-    <td align="center"><img src="../images/showcase-1-with.svg" alt="스킬 사용 커피 앱 홈" width="390"></td>
+    <td align="center"><img src="../images/showcase-1-with.gif" alt="스킬 사용 커피 앱 홈" width="360"></td>
+    <td align="center"><img src="../images/showcase-1-without.gif" alt="스킬 미사용 커피 앱 홈" width="360"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>① 전체 인상</b> —— 뻔한 그라데이션 Hero와 "Image" 자리표시자 vs. 브랜드에 뿌리를 둔 실사 레이아웃.</sub></td>
+    <td colspan="2" align="center"><sub><b>① 전체 인상</b> —— 브랜드에 뿌리를 둔 실사 레이아웃 vs. 뻔한 그라데이션 Hero와 "Image" 자리표시자.</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-2-without.svg" alt="스킬 미사용 컴포넌트 사양" width="390"></td>
     <td align="center"><img src="../images/showcase-2-with.svg" alt="스킬 사용 컴포넌트 사양" width="390"></td>
+    <td align="center"><img src="../images/showcase-2-without.svg" alt="스킬 미사용 컴포넌트 사양" width="390"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>② 컴포넌트 세부</b> —— 모호한 산문 vs. 원자적 Tailwind 클래스 + 완전한 8상태 모델 + 스프링 물리.</sub></td>
+    <td colspan="2" align="center"><sub><b>② 컴포넌트 세부</b> —— 원자적 Tailwind 클래스 + 완전한 8상태 모델 + 스프링 물리 vs. 모호한 산문.</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-3-convention.svg" alt="컨벤션 트랙 출력" width="390"></td>
     <td align="center"><img src="../images/showcase-3-innovation.svg" alt="이노베이션 트랙 출력" width="390"></td>
+    <td align="center"><img src="../images/showcase-3-convention.svg" alt="컨벤션 트랙 출력" width="390"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>③ 두 트랙 적용 범위</b> —— 같은 스킬이 절제된 SaaS 유틸리티(컨벤션)와 극적인 브랜드 스토어(이노베이션)를 모두 생성할 수 있습니다.</sub></td>
+    <td colspan="2" align="center"><sub><b>③ 두 트랙 적용 범위</b> —— 같은 스킬이 극적인 브랜드 스토어(이노베이션)와 절제된 SaaS 유틸리티(컨벤션)를 모두 생성할 수 있습니다.</sub></td>
   </tr>
 </table>
 
