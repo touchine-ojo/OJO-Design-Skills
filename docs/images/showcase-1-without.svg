@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Without OJO Skills: generic AI-looking coffee app home screen">
+  <defs>
+    <linearGradient id="slopGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="#0F172A"/>
+  <!-- generic centered hero blob -->
+  <rect x="100" y="70" width="600" height="200" rx="20" fill="url(#slopGrad)" opacity="0.9"/>
+  <rect x="250" y="110" width="300" height="28" rx="6" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="300" y="155" width="200" height="14" rx="4" fill="#E2E8F0" opacity="0.7"/>
+  <rect x="330" y="200" width="140" height="42" rx="21" fill="#22D3EE"/>
+  <!-- gray placeholder image boxes labeled "Image" -->
+  <rect x="100" y="300" width="180" height="150" rx="12" fill="#334155"/>
+  <text x="190" y="382" font-family="monospace" font-size="14" fill="#64748B">Image</text>
+  <rect x="310" y="300" width="180" height="150" rx="12" fill="#334155"/>
+  <text x="400" y="382" font-family="monospace" font-size="14" fill="#64748B">Image</text>
+  <rect x="520" y="300" width="180" height="150" rx="12" fill="#334155"/>
+  <text x="610" y="382" font-family="monospace" font-size="14" fill="#64748B">Image</text>
+  <text x="400" y="475" text-anchor="middle" font-family="monospace" font-size="12" fill="#475569">showcase-1-without.svg</text>
+</svg>

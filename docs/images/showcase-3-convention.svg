@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Convention Track: restrained SaaS utility interface">
+  <rect width="800" height="500" fill="#FFFFFF"/>
+  <!-- left nav rail (Linear/Notion vibe) -->
+  <rect x="0" y="0" width="180" height="500" fill="#FBFBFA"/>
+  <rect x="20" y="30" width="90" height="14" rx="3" fill="#191919"/>
+  <g fill="#E5E5E5">
+    <rect x="20" y="74" width="140" height="10" rx="3"/>
+    <rect x="20" y="96" width="110" height="10" rx="3"/>
+    <rect x="20" y="118" width="120" height="10" rx="3"/>
+    <rect x="20" y="140" width="90" height="10" rx="3"/>
+  </g>
+  <!-- active item highlight -->
+  <rect x="20" y="74" width="140" height="22" rx="5" fill="#F2F2F0"/>
+  <rect x="28" y="79" width="6" height="12" rx="2" fill="#5E6AD2"/>
+  <!-- dense utility grid: cards + data rows -->
+  <g fill="#F7F7F5">
+    <rect x="210" y="40" width="180" height="90" rx="6"/>
+    <rect x="400" y="40" width="180" height="90" rx="6"/>
+    <rect x="590" y="40" width="180" height="90" rx="6"/>
+  </g>
+  <text x="228" y="68" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#91918E">ACTIVE USERS</text>
+  <text x="228" y="104" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#191919" font-weight="600">12,480</text>
+  <text x="408" y="68" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#91918E">OPEN TASKS</text>
+  <text x="408" y="104" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#191919" font-weight="600">347</text>
+  <text x="598" y="68" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#91918E">UPTIME</text>
+  <text x="598" y="104" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#191919" font-weight="600">99.98%</text>
+  <!-- data rows -->
+  <rect x="210" y="160" width="560" height="1" fill="#EDEDEA"/>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#191919">
+    <text x="210" y="188">Design review</text><text x="640" y="188" fill="#5E6AD2">●</text><text x="660" y="188" fill="#91918E">In Progress</text>
+    <text x="210" y="216">API refactor</text><text x="640" y="216" fill="#4CB782">●</text><text x="660" y="216" fill="#91918E">Done</text>
+    <text x="210" y="244">Onboarding flow</text><text x="640" y="244" fill="#F2AE2E">●</text><text x="660" y="244" fill="#91918E">Review</text>
+    <text x="210" y="272">Billing migration</text><text x="640" y="272" fill="#E5484D">●</text><text x="660" y="272" fill="#91918E">Blocked</text>
+  </g>
+  <text x="210" y="320" font-family="Georgia, serif" font-size="13" fill="#91918E" font-style="italic">restrained · high-density · neutral palette</text>
+  <text x="400" y="475" text-anchor="middle" font-family="monospace" font-size="12" fill="#91918E">showcase-3-convention.svg</text>
+</svg>
