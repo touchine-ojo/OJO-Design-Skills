@@ -1,100 +1,121 @@
-# OJO UI/UX Skills
+# OJO Design Skills
 
-Reusable UI/UX skills for OJO design and product agents.
+Reusable UI/UX design skills for AI coding agents — Codex, Claude Code, ZCode, and more.
 
-## One-line Install
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Clients](https://img.shields.io/badge/clients-7-success)
+![Skills](https://img.shields.io/badge/skills-2-orange)
 
-Install all skills for your agent client:
+OJO Design Skills is a drop-in skill bundle that teaches your AI coding agent how to make real design decisions — not generic "AI-looking" layouts. Install once, and your agent gains a complete UI/UX methodology: brand-driven visual direction, design tokens, component recipes, motion specs, and a strict anti-pattern guardrail that keeps output from looking like slop.
 
-Codex:
+It is agent-agnostic and ships with a single installer that targets every major client.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target codex
-```
+---
 
-Claude Code:
+## Features
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target claude-code
-```
+- **Two-track methodology.** *Convention Track* adopts a proven design language for SaaS and utility products; *Innovation Track* builds brand-driven identity via Material Metaphor, archetype, narrative, or cultural-semiotic approaches.
+- **Anti-AI-slop guardrails.** Hard-banned combinations (purple-blue gradients, gray-box placeholders, single-hue palettes) are enforced as rules, not suggestions.
+- **Real-imagery requirement.** Any screen that shows imagery must use real, subject-specific assets — no decorative placeholders, fake stock smiles, or gradient blobs.
+- **Code-grade output.** Components resolve to atomic Tailwind class strings with an 8-state interaction model; motion uses spring physics, not fixed curves.
 
-ZCode:
+## Quick start
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target zcode
-```
-
-DeepCode:
+Install all skills with one command — replace `<client>` with your agent:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target deepcode
+curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-Design-Skills/main/scripts/install.sh | bash -s -- --target <client>
 ```
 
-WorkBuddy:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target workbuddy
-```
-
-OpenCode:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target opencode
-```
-
-Generic Agent Skills:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target generic
-```
-
-Default install locations:
-
-| Target | Default skills directory |
-| --- | --- |
-| Codex | `${CODEX_HOME:-~/.codex}/skills` |
-| Claude Code | `${CLAUDE_HOME:-~/.claude}/skills` |
-| ZCode | `${AGENTS_HOME:-~/.agents}/skills` |
-| DeepCode | `${AGENTS_HOME:-~/.agents}/skills` |
-| WorkBuddy | `${WORKBUDDY_HOME:-~/.workbuddy}/skills` |
-| OpenCode | `${OPENCODE_CONFIG_DIR:-~/.config/opencode}/skills` |
-| Generic Agent Skills | `${AGENTS_HOME:-~/.agents}/skills` |
+| Client | `--target` | Default install directory |
+| --- | --- | --- |
+| Codex | `codex` | `${CODEX_HOME:-~/.codex}/skills` |
+| Claude Code | `claude-code` | `${CLAUDE_HOME:-~/.claude}/skills` |
+| ZCode | `zcode` | `${AGENTS_HOME:-~/.agents}/skills` |
+| DeepCode | `deepcode` | `${AGENTS_HOME:-~/.agents}/skills` |
+| WorkBuddy | `workbuddy` | `${WORKBUDDY_HOME:-~/.workbuddy}/skills` |
+| OpenCode | `opencode` | `${OPENCODE_CONFIG_DIR:-~/.config/opencode}/skills` |
+| Generic agent | `generic` | `${AGENTS_HOME:-~/.agents}/skills` |
 
 Restart or reload the client if it does not pick up the new skills.
 
-Useful variants:
+<details>
+<summary>Advanced install options</summary>
 
-Replace existing installed copies without creating backups:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target codex --force
-```
-
-Install to a custom client home/config directory:
+Replace existing copies without backups:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | CLAUDE_HOME=/path/to/.claude bash -s -- --target claude-code
+curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-Design-Skills/main/scripts/install.sh | bash -s -- --target codex --force
 ```
 
-Install to an explicit skills directory:
+Install to a custom client home:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-UI-UX-skills/main/scripts/install.sh | bash -s -- --target opencode --dest /path/to/skills
+curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-Design-Skills/main/scripts/install.sh | CLAUDE_HOME=/path/to/.claude bash -s -- --target claude-code
 ```
 
-Install from a local checkout:
+Install to an explicit directory:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/touchine-ojo/OJO-Design-Skills/main/scripts/install.sh | bash -s -- --target opencode --dest /path/to/skills
+```
+
+Install from a local checkout (useful for development):
 
 ```bash
 ./scripts/install.sh
 ```
 
-Preview without writing files:
+Preview what would be written without changing files:
 
 ```bash
 ./scripts/install.sh --target opencode --dry-run
 ```
 
+Install a single skill (`--skill` can be repeated):
+
+```bash
+./scripts/install.sh --target zcode --skill visual-direction
+```
+
+</details>
+
 ## Skills
 
-- `app-ui-ux-best-practices` - comprehensive app UI/UX methodology with references for anti-patterns, visual tokens, components, motion, material metaphor, and audit.
-- `visual-direction` - general visual and experience direction skill for product, brand, UI/UX, reference adaptation, critique, and downstream handoff.
+### `app-ui-ux-best-practices`
+
+The core methodology. Picks a track based on the product's value proposition, then produces complete design specifications.
+
+- **Convention Track** — adopt one proven design language (Notion, Linear, Stripe, Things 3, …) for SaaS and utility products.
+- **Innovation Track** — build a brand-driven identity via Material Metaphor, archetype, narrative, or cultural-semiotic methods.
+- Ships with **9 reference files**: anti-patterns, visual tokens, component recipes, motion system, material metaphor, design audit, and more.
+
+### `visual-direction`
+
+A general visual and experience-direction skill. Explores directions, adapts references (URL, screenshot, Figma), critiques proposals, and hands off a portable brief to downstream design-system, IA, or implementation work. No fixed output template — it responds in whatever shape the task needs.
+
+## How it works
+
+```
+Product brief
+   │
+   ├─ Convention Track ──► pick proven system ──► tokens ──► components ──► specs
+   │   (SaaS / utility)        (Notion, Linear…)
+   │
+   └─ Innovation Track ──► insight + feeling ──► methodology ──► tokens ──► specs
+       (brand-driven)         (Material Metaphor / archetype / narrative)
+```
+
+Both tracks require a mandatory style-direction confirmation gate before producing tokens — the agent presents 2–3 genuinely distinct directions and waits for selection. Once installed, skills are activated automatically when the agent detects design-related intent (e.g. "design system", "视觉设计", "design tokens").
+
+## Contributing
+
+Skills are plain Markdown files under `skills/<name>/SKILL.md` plus optional `references/` files. To add or refine a skill, edit the files and run the installer locally to verify:
+
+```bash
+./scripts/install.sh --dry-run
+```
+
+## License
+
+[MIT](./LICENSE)
