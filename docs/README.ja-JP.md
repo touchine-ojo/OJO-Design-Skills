@@ -10,7 +10,7 @@
 [![Clients](https://img.shields.io/badge/clients-7-success)](#クイックスタート)
 [![Skills](https://img.shields.io/badge/skills-2-orange)](#スキル)
 
-[English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語** · [한국어](./README.ko-KR.md) · [Español](./README.es-ES.md)
+[English](../README.md) · [简体中文](./README.zh-CN.md) · **日本語** · [한국어](./README.ko-KR.md) · [Español](./README.es-ES.md)
 
 </div>
 
