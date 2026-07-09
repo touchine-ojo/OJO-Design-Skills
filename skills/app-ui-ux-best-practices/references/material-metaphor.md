@@ -81,6 +81,14 @@ Generate keywords in the user's language that capture brand essence.
 | **Brushed Aluminum** | Technical, Clean, Professional | Directional grain, matte finish, industrial | Developer tools, productivity apps |
 | **Woven Linen** | Natural, Breathable, Honest | Visible weave, slight irregularity, tactile | Sustainable products, organic brands |
 | **Cork Board** | Casual, Organizational, Tactile | Pin texture, natural variation, warm | Planning tools, note-taking, organization apps |
+| **Rusted Steel** | Raw, Defiant, Weathered | Oxidized texture, uneven patina, industrial decay | Music venues, street culture, counterculture brands |
+| **Raw Concrete** | Brutal, Honest, Massive | Raw grit, formwork marks, textured imperfections | Brutalist editorial, architecture, bold statements |
+| **Torn Cardboard** | DIY, Urgent, Handmade | Irregular fiber edges, collage aesthetic, stamps | Zines, event promos, grassroots communities |
+| **Corrugated Iron** | Industrial, Rhythmic, Utilitarian | Structural repetition, hard ridges, functional | Workshops, logistics, maker tools |
+| **Xeroxed Paper** | Punk, Cheap, Immediate | Photocopy distortion, ink bleed, halftone dots | Underground music, protest, DIY culture |
+| **Spray-Painted Plywood** | Street, Loud, Layered | Stencil edges, drips, layered tags | Skate/street brands, urban events, youth culture |
+
+**Track selection**: pick the material from the derived register dials — the refined materials (Glass, Paper, Linen…) are NOT a default. A loud/raw register must pull from the rugged rows or invent equivalents; a quiet/polished register earns the refined rows. Both tracks demand the same engineering rigor.
 
 ### Material Translation Examples
 
@@ -126,6 +134,13 @@ Generate keywords in the user's language that capture brand essence.
 | **Modern Art Gallery** | Precise, Elevated, Spacious | Neutral daylight, minimal shadows, focus on content | 5000K-5500K neutral-cool |
 | **Desert at High Noon** | Stark, Bold, Unfiltered | Harsh directional light, strong shadows | 5500K-6500K bright neutral |
 | **Rainy City Street** | Urban, Reflective, Dynamic | Diffused gray light, reflections, wet surfaces | 6000K-7000K overcast |
+| **Underground Rock Club** | Loud, Sweaty, Electric | Heavy high-contrast spotlights, raw concrete, haze | 2000K-3000K hot amber + harsh white |
+| **Abandoned Industrial Factory** | Tense, Monumental, Raw | Shafts of daylight, structural steel shadows | 5000K-6500K cold daylight |
+| **Skatepark at Dawn** | Gritty, Restless, Free | Asymmetric street light, graffiti color pops, long shadows | 4000K-5000K neutral + neon offsets |
+| **Neon Night Market** | Dense, Chaotic, Alive | Signage collision, chromatic overload, mixed sources | 2500K-8000K mixed clash |
+| **Basement Zine Print Shop** | DIY, Inky, Urgent | Fluorescent flicker, ink smell, misregistered color | 4000K-5000K flat fluorescent |
+
+**Track selection**: same rule as materials — the serene environments are not a default. Choose the setting whose light and energy match the derived register dials.
 
 ### Environment Translation Examples
 
@@ -212,7 +227,9 @@ Pick ONE primary radius for buttons/cards, optionally one secondary for smaller 
 
 ---
 
-## Step 5: Micro-Detail Polish
+## Step 5: Micro-Detail Finishing
+
+The three techniques below (Surface Luster, Tactile Depth, Ambient Warmth) serve **polished-register** materials. For raw-register materials (Rusted Steel, Xeroxed Paper, Torn Cardboard…), use the raw texture vocabulary instead — heavy grain/halftone, misregistered overprint, torn/cut edges, hard borders with offset solid shadows, tape/staple fixings (see `visual-tokens.md` § Raw Register Textures). Both vocabularies demand the same level of explicit engineering; neither is optional garnish.
 
 ### 5.1 Surface Luster
 

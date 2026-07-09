@@ -40,6 +40,20 @@ Design audit operates in **documentation mode**: finds and reports issues with s
 
 ---
 
+## Audit 0: Register Fidelity
+
+Before checking quality details, verify the output is faithful to the evidence-derived register declaration (`Energy`, `Finish`, `Density`, `Weight`, `Seriousness`). This audit is **two-way** — there is no "correct" register, only faithful or unfaithful execution:
+
+- [ ] The declared register dials exist and cite evidence (product subject, audience, brand voice). Missing declaration with mood-adjective-only rationale ("premium feel", "克制高级") = **High**.
+- [ ] Declared loud/raw/dense but delivered polished: soft shadows, 12-16px radii, generous whitespace, subtle gradients where the direction called for hard borders, collision, grain = **Critical** (the design was normalized back to the AI default register).
+- [ ] Declared quiet/polished/sparse but delivered gritty: noise overlays, torn edges, brutalist borders forced onto a product whose evidence says quiet = **Critical** (same failure, opposite direction).
+- [ ] Register consistency across screens: hero is loud/raw but settings/forms silently revert to generic polished defaults (or vice versa) without a deliberate quiet-zone decision = **High**.
+- [ ] Accessibility floor holds regardless of register: contrast ratios, tap targets, focus indicators, and text legibility are never sacrificed to either grit or minimalism = **Critical** if violated.
+
+**Quiet/polished output for a meditation, luxury, or archival product with cited evidence passes this audit unconditionally.** The failure is unearned defaults, not any specific register.
+
+---
+
 ## Audit 1: Visual Coherence
 
 Evaluates color usage, visual hierarchy, and design token consistency.
@@ -253,7 +267,7 @@ Check these 5 traits first:
 - [ ] Grid patterns or dot matrices are ALLOWED for DevTools, Neo-brutalism, or technical products
 - [ ] **Layout Mode Consistency**: check against the declared `theme.layoutMode`:
   - `EDITORIAL` — MUST use at least one non-linear section (Bento Grid, asymmetric columns, overlapping elements, or editorial rhythm). Pure flex-column = FAIL.
-  - `UTILITY` — linear layout allowed, but MUST be elevated through typography, deliberate whitespace, or refined micro-interactions. Visually bland linear = FAIL.
+  - `UTILITY` — linear layout allowed, but MUST be elevated through typography, deliberate spacing rhythm, or considered micro-interactions (in the declared register's vocabulary). Visually bland linear = FAIL.
   - `HYBRID` — MUST contain at least one heterogeneous layout zone (e.g. featured hero or bento section) AND at least one clean linear section. A layout that is entirely one mode = FAIL.
   - If `theme.layoutMode` is absent, infer from product type (consumer/lifestyle → EDITORIAL rules apply; B2B/tool → UTILITY rules apply).
 
@@ -301,7 +315,8 @@ Fast pass before full audit. Use this for rapid QA during design process.
 - [ ] Primary color NOT purple/violet
 - [ ] NO glassmorphism + glow borders
 - [ ] Buttons solid colors, NOT gradients
-- [ ] Looks like a real shipped product (the precision/polish standard of the reference system you selected)
+- [ ] Looks like a real shipped product (the execution standard of the reference system or genre you selected — a shipped gig poster site and a shipped SaaS dashboard both count)
+- [ ] Register faithful: output matches the declared register dials, not smoothed toward polished nor roughened toward gritty (Audit 0)
 
 **If any fail:** Run full AI detection audit.
 

@@ -61,19 +61,6 @@ Apply a saturation budget before writing tokens: base low saturation, support lo
 
 **Tonal Active States:** selected/active controls should use color + shape/weight/indicator. Prefer an 8-12% tint pill or bar plus icon/label weight changes over a bare neon icon. A good mobile tab state is readable in grayscale and still gains brand character from the tint.
 
-**APP Material Fidelity Tokens (APP/Mobile):**
-Material quality is a first-class token concern on app screens. If the direction asks for transparent, rounded, dimensional, tactile, or skeuomorphic surfaces, define material tokens instead of relying on vague class strings.
-
-Required material tokens when applicable:
-- **translucency**: intended alpha range for glass/acrylic surfaces; store opaque color tokens and document opacity usage in the guide.
-- **blur**: backdrop blur strength by surface role (e.g. dock, player, sheet, card).
-- **rim highlight**: top/edge border or inner highlight that makes translucent surfaces catch light.
-- **bevel**: inner-shadow or layered edge treatment for dimensional buttons, knobs, media controls, and cards.
-- **luster/noise**: grain, gloss, satin highlight, or matte texture intensity.
-- **pressed/lifted states**: active depth, translate/scale, shadow delta, and friction so touch feedback feels physical.
-
-Base UI components stay restrained while expressive surfaces carry the brand. A settings row may use the quiet base material; a player control, album card, feed card, bottom sheet, or hero button can use richer material tokens. If a texture cannot be credibly built with CSS, specify whether it should come from a generated image, sourced asset, or a Three.js high-value component.
-
 **Surface Layer Hue Shift:**
 Surface layers should use subtle hue shifts, not just brightness changes:
 - Card on #1A1A1B background should be #232325 (slightly warmer, not just lighter)
@@ -139,9 +126,9 @@ Six methods for building harmonious palettes. Cross-reference with `color-palett
 | **Complementary** | Opposite 180 degrees on color wheel | High-contrast, energetic, call-to-action | Mint Rose, Sakura Teal, Teal Bronze |
 | **Split-Complementary** | Primary + two colors flanking its complement | Vibrant but balanced, creative | Sky Blush, Clay Garden, Dusty Violet |
 | **Triadic** | Equidistant 120 degrees on color wheel | Playful, diverse, bold | Candy Pop |
-| **Warm/Cool Contrast** | Warm-dominant + cool accent or vice versa | Tension, sophistication, modern | Steel Cream, Arctic Dawn, Copper Night |
+| **Warm/Cool Contrast** | Warm-dominant + cool accent or vice versa | Tension, temperature depth, modern | Steel Cream, Arctic Dawn, Copper Night |
 
-When selecting a method, consider the product's emotional register. Monochromatic is safe for utility products. Complementary creates energy for consumer products. Warm/cool contrast creates sophistication for premium brands.
+When selecting a method, derive from the product's register dials, not from a taste default. Monochromatic suits utility products and quiet registers. Complementary and triadic carry energy for consumer and loud registers. Warm/cool contrast builds tension for both polished-premium and raw-industrial directions — the method is register-neutral; the saturation budget and finish decide the character.
 
 **WARNING — Warm-tone convergence:** AI agents overwhelmingly default to amber/gold/orange/terracotta accents (hue 15-50). When no explicit warm guidance exists from the user, actively consider cool alternatives: teal (hue 170-195), olive (hue 80-130), slate blue (hue 200-220). The goal is diversity across consecutive designs, not replacing blurple-bias with amber-bias.
 
@@ -210,9 +197,9 @@ Choose a base unit of **4px** or **8px**, then define multiplier scale.
 | 12x | 48px | 96px | Macro whitespace |
 | 16x | 64px | 128px | Page sections |
 
-**Macro Whitespace (Section Separation):** 64-120px between major sections. Creates breathing room and visual hierarchy.
+**Macro Whitespace (Section Separation) — take from the `Density` dial:** Sparse register 64-120px between major sections; Standard 32-64px; Dense/poster register 8-32px with intentional overlaps and edge-to-edge bleeds allowed. Do not apply the sparse value as a universal default.
 
-**Micro Whitespace (Content Padding):** Content must not touch container borders. Minimum 16px padding on interactive elements. Minimum 8px gap between related items.
+**Micro Whitespace (Content Padding):** In sparse/standard registers, content must not touch container borders — minimum 16px padding on interactive elements, minimum 8px gap between related items. In dense-poster register, full-bleed and touching edges are legitimate compositional moves, but tap targets must still meet the 44px minimum and text must stay clear of clipping.
 
 ### 4. Border Radius System
 
@@ -253,11 +240,19 @@ High-fidelity rendering details that separate good design from great design. Def
 
 **Borders:** 1px borders with subtle opacity for crisp edges. rgba(0,0,0,0.1) in light mode, rgba(255,255,255,0.1) in dark mode.
 
-**Surface Luster (Innovation Track):** Highlight reflections on top edges. Subtle white gradient at 5-10% opacity.
+The recipes above (subtle noise, frosted glass, soft gradients) serve polished registers. Raw registers get their own texture vocabulary — equally explicit, equally engineered:
 
-**Tactile Depth (Innovation Track):** Multi-layer shadows for physical realism. Combine outer shadow with inner shadow.
+**Raw Register Textures (take from the `Finish` dial):**
+- **Heavy Grain/Halftone:** 10-25% opacity noise or halftone-dot overlays; visible, not subliminal. CSS `background-image` with SVG noise/dot patterns.
+- **Photocopy/Overprint:** misregistered color layers (duplicate element with 2-4px offset and `mix-blend-mode: multiply`), ink-bleed edges, streak artifacts.
+- **Torn/Cut Edges:** irregular `clip-path` polygons or mask images instead of rounded corners; deckled or ripped borders on cards and images.
+- **Hard Borders & Offset Shadows:** `border-2 border-black`, `shadow-[4px_4px_0_#000]` — solid, unblurred, directional.
+- **Tape/Staple/Sticker Fixings:** small rotated pseudo-elements pinning collage items; deliberate 1-3deg rotations on a rigid underlying grid.
 
-**Ambient Warmth (Innovation Track):** 5-10% cross-temperature color injection. Add warm hue to cool surfaces, cool hue to warm surfaces.
+**Polished Register Finishing (Innovation Track):**
+- **Surface Luster:** Highlight reflections on top edges. Subtle white gradient at 5-10% opacity.
+- **Tactile Depth:** Multi-layer shadows for physical realism. Combine outer shadow with inner shadow.
+- **Ambient Warmth:** 5-10% cross-temperature color injection. Add warm hue to cool surfaces, cool hue to warm surfaces.
 
 ---
 

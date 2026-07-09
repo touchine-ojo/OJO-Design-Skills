@@ -18,7 +18,7 @@ This is a general skill, not a fixed output template. It can explore directions,
 - Ask only when a missing decision would materially change the direction. Otherwise make a reasoned call and state the assumption briefly.
 - Do not expose internal tool names, skill names, activation details, stage labels, scratch checks, or handoff mechanics.
 - Prefer the user's supplied references over generic design examples.
-- Resolve structure before decoration: UI language, information architecture, interaction mode, material behavior, and accessibility come before palette polish.
+- Resolve structure before decoration: register, information architecture, interaction mode, material behavior, and accessibility come before palette styling.
 
 ## Use Cases
 
@@ -56,28 +56,23 @@ If the product/domain is missing and the answer would become generic, ask one sh
 
 ### 3. Synthesize The Direction
 
-Decide only the layers needed for the task:
+**Derive the style register first (fit before diversity).** From the product's subject matter, audience, brand voice, and cultural context, set five observable dials: `Energy` (quiet↔loud), `Finish` (raw↔polished), `Density` (sparse↔dense), `Weight` (light↔heavy), `Seriousness` (playful↔solemn). Every dial value must cite evidence — no habit defaults in either direction: quiet/polished is fully legitimate when the evidence earns it, and a rock-venue or zine brief must actually land loud/raw instead of being smoothed into polished minimalism. Mood adjectives (premium, refined, restrained, epic, 高级感, 精致, 克制) are never a justification; translate them into observable values before using them (see `../app-ui-ux-best-practices/references/anti-patterns.md` § Vague-Word Firewall).
+
+Then decide only the layers needed for the task:
 
 - Product promise and target user.
-- Primary UI language, plus at most one scoped secondary UI language.
+- Register dials with their evidence.
 - Information architecture and navigation model.
 - Layout density, content hierarchy, interaction rhythm, and state model.
 - Color identity, typography attitude, material/depth, motion behavior, and icon/image stance.
 - Constraints, risks, and non-goals.
 
-For mobile/app work, decide **APP UI language architecture** before style:
+For mobile/app work, apply a structural lens before style (a design lens, not a mandatory output schema):
 
-- Primary UI language.
-- Optional scoped secondary UI language.
-- Layout language.
-- Content language.
-- Interaction language.
-- Material language.
-- Navigation shell: `TabBar`, `Stack`, `Hub`, `Single-view`, or `Feed`.
+- Navigation shell chosen from the product flow: `TabBar`, `Stack`, `Hub`, `Single-view`, `Feed`, player, canvas/workspace, or workbench.
+- Which moments carry visual expression and which routine controls stay quiet — keep concrete evidence such as player controls, feed rhythm, canvas edge tools, catalog comparison, or tactile media surfaces if the concept depends on them.
 
 Do not default every app to a bottom tab bar. A tab bar is earned only by genuinely peer top-level destinations.
-
-For APP material fidelity, decide the **app style locus** before effects: routine navigation, settings rows, forms, and base controls should stay restrained; expressive surfaces such as media cards, hero controls, feed cards, bottom sheets, signature CTAs, canvas surfaces, or high-value interactive components may carry richer material.
 
 ### 4. Respond In The Useful Shape
 
@@ -91,6 +86,8 @@ Use the smallest structure that helps the user or caller act:
 
 If comparing options, make each option meaningfully different in structure and emotional register. Do not create light/dark/warm variants of the same idea. If the user asks for a single direction, give one strong direction instead of padding alternatives.
 
+**Register constraint (overrides diversity)**: when the evidence locks a register region, all compared options stay inside it — a rock-venue brief gets loud/raw options that differ in layout, color identity, and depth, never one loud option "balanced" by polished-minimal alternatives. Spread options across register levels only when the evidence is genuinely ambiguous.
+
 ## Quality Guardrails
 
 - Avoid one-note palettes, dominant hue family repetition, and mode variants.
@@ -102,6 +99,8 @@ If comparing options, make each option meaningfully different in structure and e
 - Couple visual direction with IA. Different visual worlds should imply different layout priorities, page shapes, navigation, and interaction rhythms.
 - Every interactive component needs complete state thinking, even when the final answer only summarizes the direction.
 - "Premium" should come from hierarchy, spacing, material logic, and state quality, not extra glow.
+- No unearned register defaults, in either direction: do not deliver quiet-polished minimalism for a brief whose evidence says loud/raw, and do not force grit onto a product whose evidence says quiet. The failure is skipping derivation, not any specific register.
+- Mood adjectives are not rationale. Translate premium/refined/restrained/epic (高级感/精致/克制/史诗) into dial values plus observable decisions, or drop them.
 
 ## Optional Companion Skills
 

@@ -443,6 +443,7 @@ Creative interpretation required:
 - How does "Liquid Metal" dictate background colors and ring utilities?
 - How does "Playfulness" change rounded corners and hover animations?
 - How does "Precision" influence spacing and alignment?
+- How does "Distortion" translate into overprint offsets, clip-paths, and transition-none?
 
 ### Translation Examples
 
@@ -466,6 +467,13 @@ Creative interpretation required:
 - Multi-layer shadows (shadow-md with colored tint)
 - Active state with scale transform (active:scale-95)
 - Comfortable padding with rhythm (p-4, p-6)
+
+**Feeling: "Distortion" + Material: "Xeroxed Paper"**
+- No rounding (rounded-none), irregular clip-path edges on feature cards
+- Hard black borders (border-2 border-black) and offset solid shadows (shadow-[4px_4px_0_#000])
+- Halftone/noise overlay at visible opacity (15-25%), misregistered duplicate text layers
+- Instant state changes (transition-none or duration-75 linear)
+- Tight, colliding padding with deliberate 1-3deg rotations on a rigid grid
 
 ### Material-Specific Patterns
 
@@ -504,6 +512,37 @@ Button: bg-primary text-black font-bold border-2 border-black shadow-[4px_4px_0p
 Container: bg-white/10 backdrop-blur-2xl border border-white/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] ring-1 ring-white/10 inset-0
 Button: bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.2)] text-white transition-all
 ```
+
+**Gig Poster / Zine Collage (Loud-Raw Register):**
+```
+Container: bg-[#F2EFE6] border-2 border-black rounded-none rotate-[-1deg] shadow-[6px_6px_0_#000] relative overflow-visible
+Button: bg-black text-[#F2EFE6] font-black uppercase tracking-tight border-2 border-black rounded-none px-5 py-2 hover:bg-primary hover:text-black active:translate-x-[2px] active:translate-y-[2px] transition-none
+Accent: duplicated headline layer with translate-x-[3px] translate-y-[2px] text-primary mix-blend-multiply (misregistered overprint); halftone-dot SVG overlay at 15-20% opacity
+Note: rotations sit on a rigid underlying grid; tap targets stay >= 44px and clear of overlaps
+```
+
+**Industrial / Utilitarian Hard Surface (Heavy Register):**
+```
+Container: bg-[#1C1E1F] border border-[#3A3D3E] rounded-sm shadow-none
+Button: bg-[#2A2D2E] text-[#E8E6E0] font-mono uppercase text-sm border border-[#4A4D4E] rounded-sm px-4 py-2 hover:bg-[#3A3D3E] hover:border-[#6A6D6E] active:bg-[#232526] transition-colors duration-100
+Accent: safety-stripe or stencil label details; hard 1px dividers; zero blur, zero gradient
+```
+
+**Toy / Playful Chunky (Playful Register):**
+```
+Container: bg-white rounded-3xl border-4 border-[#2B2B2B] shadow-[0_6px_0_#2B2B2B]
+Button: bg-primary text-white font-extrabold rounded-full px-6 py-3 border-4 border-[#2B2B2B] shadow-[0_5px_0_#2B2B2B] hover:-translate-y-[2px] hover:shadow-[0_7px_0_#2B2B2B] active:translate-y-[3px] active:shadow-[0_2px_0_#2B2B2B] transition-all duration-150
+Note: spring overshoot on entrances (low damping) is deliberate here, not a violation
+```
+
+**Luxury Serif Editorial (Quiet-Polished Register):**
+```
+Container: bg-[#FBFAF7] rounded-none border-0 shadow-none px-12 py-16
+Button: bg-transparent text-[#1A1A18] font-serif tracking-[0.08em] uppercase text-sm border-b border-[#1A1A18] rounded-none px-0 py-2 hover:opacity-60 transition-opacity duration-300
+Accent: hairline 1px rules, extreme whitespace, high-contrast serif display with tight optical kerning
+```
+
+These genre recipes are calibration anchors keyed to register dials, not a menu — interpolate or derive new ones from the declared register and material metaphor.
 
 ### 3D / WebGL Component Recipe (APP high-value components)
 

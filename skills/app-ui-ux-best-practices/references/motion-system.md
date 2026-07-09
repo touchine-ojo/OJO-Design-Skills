@@ -143,7 +143,7 @@ The default disposition is "use sparingly and with clear intent." When the brand
 **When it works:**
 - Brand expression on agency / portfolio / creative-tool sites
 - Spotlight effect that genuinely improves visibility (e.g. dark-mode hero)
-- Subtle button tilt / magnetic hover when it reinforces "premium / playful" brand
+- Subtle button tilt / magnetic hover when it reinforces the declared register (playful overshoot, tactile-polished settle, or mechanical snap — derived, not assumed)
 - Interactive 3D / WebGL hero compositions
 
 **When to avoid:** Application UI, anywhere keyboard users will outnumber mouse users.
@@ -362,11 +362,11 @@ Exit animations should be ~75% of entrance duration.
 
 **Tailwind:** `ease-out` (built-in approximation)
 
-### Never Use
+### Never Use As Default
 
-**BANNED:** `ease-in-out-bounce`, `ease-in-out-elastic`
+**BANNED as unconsidered defaults:** `ease-in-out-bounce`, `ease-in-out-elastic`
 
-**Why:** Feels dated (2010s web design), toy-like, unprofessional
+**Why:** Feels dated (2010s web design) when applied out of habit. Exception: a genuinely playful register (kids products, toy-like brands) may use spring overshoot deliberately — via spring physics parameters (low damping), not CSS bounce presets.
 
 ### Easing by Purpose
 
@@ -377,13 +377,13 @@ Exit animations should be ~75% of entrance duration.
 | **Movement** | ease-in-out | Smooth acceleration and deceleration |
 | **Feedback** | ease-out | Immediate response, gentle settle |
 
-### All Animations Must Have Inertia
+### Inertia by Register
 
-**NEVER:** Linear easing (`transition: all 300ms linear;`)
+**Quiet/polished registers:** never linear easing (`transition: all 300ms linear;`). Nothing in nature moves at constant speed; unconsidered linear looks robotic. Use ease-out, ease-in, or ease-in-out.
 
-**WHY:** Nothing in nature moves at constant speed. Looks robotic.
+**Loud/raw registers (punk zine, brutalist, industrial, glitch):** hard cuts (no transition), linear snaps at 80-150ms, and stepped/frame-skip reveals (`steps(n)`) are legitimate brand expression — the mechanical, abrupt character IS the material. Use them deliberately and consistently, not as leftover defaults.
 
-**FIX:** Always use ease-out, ease-in, or ease-in-out.
+**The actual ban:** unconsidered easing — linear left in place by accident in a polished register, or springs smoothing away the deliberate abruptness of a raw register. The curve must be chosen from the declared register, both directions.
 
 ---
 

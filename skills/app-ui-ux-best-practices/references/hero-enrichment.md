@@ -13,7 +13,7 @@ The tiers are ordered by ambition and production cost. A higher tier is not bett
 | Tier | Hero archetype | Production weight | When it fits |
 |------|----------------|--------------------|--------------|
 | **0** | No hero | None — page begins with the working surface | Utility apps, dashboards, internal tools, B2B SaaS where the product IS the value prop. The user logged in to do work, not to be sold to. |
-| **A** | Editorial type-only | Light: typography + spacing | Content / writing / publishing products, editorial brands, premium-restraint brands ("we don't need to shout"). The hero IS the typography. |
+| **A** | Editorial type-only | Light: typography + spacing | Content / writing / publishing products, editorial brands, focus-coded brands (whether quiet-minimalist or bold-raw poster). The hero IS the typography. |
 | **B** | Hero + single strong image | Medium: one curated photograph or illustration | Lifestyle, commerce, hospitality, food, travel, fitness — products where the *thing* is visual and the user wants to see it. |
 | **C** | Editorial composition | Heavy: structured asymmetric layout, multiple anchored elements | Magazine / journalism, premium D2C, design tools, products that earn editorial design through curated content. |
 | **D** | Motion / video / animated medium | Heavy: video, scroll-driven, or generative motion | Creative tools, agencies, immersive branded experiences, products whose differentiator is motion behavior itself. |
@@ -32,16 +32,17 @@ Walk this top-down. Stop at the first branch that fires. **If you reach the bott
    → **Tier 0** for the form-dominant variant; the form IS the hero. Optional: Tier A for a one-line value-prop above the form. Stop.
 
 3. **Is the product domain in this list?** SaaS-utility, dev tools, B2B internal tools, admin panels, finance dashboards, analytics, project management, ticketing, CRMs.
-   → **Tier 0** for the in-app pages. **Tier A** allowed only on the marketing landing page if the brand is restraint-coded (Linear, Stripe, Vercel pattern). Default: **Tier 0**. Stop.
+   → **Tier 0** for the in-app pages. **Tier A** allowed only on the marketing landing page if the brand is focus-coded (whether quiet Linear/Vercel pattern or raw-rebellious poster pattern). Default: **Tier 0**. Stop.
 
 4. **Does the brand-keywords list (from `contextSummary.brand` / Feeling Keywords) include any of these?**
 
    | Brand keyword cluster | Tier hint |
    |--|--|
-   | "editorial", "writerly", "calm", "considered", "premium-restraint", "literary", "scholarly", "publishing" | **A** |
+   | "editorial", "writerly", "calm", "considered", "focus-coded", "literary", "scholarly", "publishing" | **A** |
    | "sensory", "tactile", "appetite", "lifestyle", "wanderlust", "lush", "cozy", "warm", "handmade", "artisan" | **B** |
-   | "magazine", "curated", "auteur", "editorial-design", "art-directed", "fashion", "high-end-D2C" | **C** |
+   | "magazine", "curated", "auteur", "editorial-design", "art-directed", "fashion", "high-tension-D2C", "bold-collage" | **C** |
    | "kinetic", "playful", "expressive", "creative-tool", "studio", "motion-first", "agency", "experiential" | **D** |
+   | "raw", "distortion", "underground", "street", "punk", "zine", "grunge", "rebellious", "industrial", "protest", "loud" | **C** (poster/collage pattern) or **D** if motion-first — never smooth these into A/B |
    | "flagship-launch", "hardware-reveal", "art-installation", "sensorial", "exhibit", "release" | **E** (verify the brand earns it before committing) |
 
    → Apply the tier hint. If multiple clusters fire, choose the **lower** tier (cheaper, more defensible). Stop.
