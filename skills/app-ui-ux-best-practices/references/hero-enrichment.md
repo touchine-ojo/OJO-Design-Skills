@@ -221,4 +221,4 @@ The Tailwind / `var(--xxx)` strings shown in the recipe sketches above are **str
 
 **If a token the hero needs does not exist in the theme**, the correct response is to add it to `theme.json` (and update the type-scale ratio metadata accordingly per design-dna's Type-Scale Ratio rule), not to hardcode a one-off literal in the hero. The hero earns its visual authority through the theme's coherent ladder, not through escaping it.
 
-**Rationale**: a hero that uses `text-[112px]` while the rest of the page uses `var(--font-size-display)` produces two different type rhythms on the same screen — exactly the "字号非常乱 / spacing 似乎失效" failure mode this section exists to prevent. The hero must SHARE the theme's ladder, just at higher steps.
+**Rationale**: a hero that uses `text-[112px]` while the rest of the page uses `var(--font-size-display)` produces two different type rhythms on the same screen — exactly the "chaotic type sizes / spacing feels broken" failure mode this section exists to prevent. The hero must SHARE the theme's ladder, just at higher steps.

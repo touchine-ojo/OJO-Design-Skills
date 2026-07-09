@@ -119,7 +119,7 @@ These families are not forbidden colors. They are forbidden as unchallenged whol
 The register-level version of the same failure. Quiet/polished/sparse/restrained is a fully legitimate style register — meditation, luxury, archival, and civic products often earn it. What is banned is **skipping derivation**, in either direction:
 
 - ❌ Evidence points elsewhere but output lands quiet-polished anyway: an underground rock page delivered as minimal beige cards with soft shadows and generous whitespace; a horror game landing smoothed into frosted glass; a kids product flattened into thin-font "premium" neutrals.
-- ❌ Register values that cannot cite evidence and defend themselves only with mood adjectives ("it feels premium", "for a high-end look", "克制高级").
+- ❌ Register values that cannot cite evidence and defend themselves only with mood adjectives ("it feels premium", "for a high-end look", "just make it tasteful").
 - ❌ The reverse: forcing grain, torn edges, or brutalist borders onto a product whose evidence says quiet-polished, "to make it interesting".
 - ✅ Meditation app → quiet + polished + sparse, evidence cited. Correct.
 - ✅ Gig poster → loud + raw + dense, evidence cited. Correct.
@@ -132,13 +132,13 @@ Mood adjectives are never a design justification. When one appears — in user i
 
 | Vague word | Must be translated into (examples — derive actual values from evidence) |
 |---|---|
-| premium / 高级感 | WHICH register? Quiet-luxury: high-contrast serif, hairline rules, 64px+ spacing, duotone palette. Or heavy-industrial: machined surfaces, hard 1px dividers, mono labels. "Premium" alone decides nothing. |
-| refined / 精致 | tolerance decisions: optical kerning, 4px-grid alignment, max 2 shadow levels, <=3 hues — not "make it tasteful" |
-| restrained / 克制 | saturation budget (e.g. accent <=10% surface, chroma <=0.12), motion amplitude cap, hue count cap |
-| epic / 史诗 | scale decisions: 96-144px display type, full-bleed hero, high-contrast lighting ratio — not a mood |
-| literary / 文学感 | serif family choice, measure 60-75ch, generous line-height 1.6-1.8, ink-on-paper palette |
-| edgy / raw / 粗糙 | which raw devices: halftone %, misregistration offset px, torn clip-path, hard shadow offset, rotation degrees |
-| clean / 简洁 | information-density tier + what is being removed and why; "clean" is an outcome, not an instruction |
+| premium | WHICH register? Quiet-luxury: high-contrast serif, hairline rules, 64px+ spacing, duotone palette. Or heavy-industrial: machined surfaces, hard 1px dividers, mono labels. "Premium" alone decides nothing. |
+| refined | tolerance decisions: optical kerning, 4px-grid alignment, max 2 shadow levels, <=3 hues — not "make it tasteful" |
+| restrained | saturation budget (e.g. accent <=10% surface, chroma <=0.12), motion amplitude cap, hue count cap |
+| epic | scale decisions: 96-144px display type, full-bleed hero, high-contrast lighting ratio — not a mood |
+| literary | serif family choice, measure 60-75ch, generous line-height 1.6-1.8, ink-on-paper palette |
+| edgy / raw | which raw devices: halftone %, misregistration offset px, torn clip-path, hard shadow offset, rotation degrees |
+| clean | information-density tier + what is being removed and why; "clean" is an outcome, not an instruction |
 
 If a word cannot be translated into observable decisions, drop it from the rationale.
 
@@ -254,7 +254,7 @@ Attempting to align text symmetrically (e.g., `[Name] [Avatar] VS [Avatar] [Name
 | **"Premium" brand** | Thin weight + Massive spacing | Looks like every luxury template |
 | **"Friendly" app** | Rounded sans-serif (Nunito, Quicksand) | Childish, lacks credibility |
 | **"Tech" product** | Monospace for everything | Programmer aesthetic, not user-friendly |
-| **Chinese product** | 思源黑体 / Source Han Sans for everything | Default, no brand identity. Almost every AI-generated Chinese UI converges on Source Han Sans / Noto Sans SC because they are the Google-Fonts CJK default — that itself is the AI tell. |
+| **Chinese product** | Source Han Sans / Noto Sans SC for everything | Default, no brand identity. Almost every AI-generated Chinese UI converges on Source Han Sans / Noto Sans SC because they are the Google-Fonts CJK default — that itself is the AI tell. |
 
 **Action**: Choose typography that reflects the BRAND VOICE, not the category expectation. For CJK products, pick a distinctive emfont family (e.g. `jfOpenHuninn` for friendly-rounded, `cwTeXMing` for editorial Ming, `ChironHeiHK` for Hong Kong-flavored Hei) — see `emfont-fonts` skill catalog at `https://font.emtech.cc/list`.
 
@@ -518,7 +518,7 @@ REMOVE FROM PALETTE:
 | **IconFinder** | Flooded with 3D/gradient garbage |
 | **AI-Generated** | All AI icons banned without exception |
 | **Noun Project (free)** | Inconsistent styles |
-| **Iconfont (阿里)** | Mixed quality, style chaos |
+| **Iconfont (Alibaba)** | Mixed quality, style chaos |
 
 ### ✅ Icon Quality Standards
 

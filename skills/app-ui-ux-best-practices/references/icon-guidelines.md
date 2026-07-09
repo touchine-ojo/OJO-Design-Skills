@@ -28,7 +28,7 @@
 
 | Pattern | Why It's Wrong |
 |---------|---------------|
-| **Neon glow effects** (霓虹发光) | Cheap, dated, "AI-generated" look |
+| **Neon glow effects** | Cheap, dated, "AI-generated" look |
 | **Rainbow/multi-color gradients** | Visual noise, unprofessional |
 | **Plastic 3D with shiny highlights** | Skeuomorphic relic |
 | **Star decorations** (✨) | Decorative clutter |

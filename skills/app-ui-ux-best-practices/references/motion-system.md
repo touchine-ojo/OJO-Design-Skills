@@ -293,12 +293,12 @@ The aesthetic side of the Material Metaphor (full base-material catalogue, envir
 
 | Verb | Physical anchor | Stiffness / Damping | Feel | Use cases |
 |------|----------------|----------------------|------|-----------|
-| **Click** | 磁铁吸合 / 卡扣 / 拨动开关 (magnet snap, latch, toggle) | 350-400 / 10-15 | Quick decisive snap, low resistance | button press, modal entry, dropdown reveal, toggle |
-| **Slide** | 气压关门器 / 抽屉阻尼 (pneumatic door closer, drawer damper) | 250-300 / 20-25 | Smooth controlled travel, natural resistance | bottom sheet, accordion, drawer, FAB flyout |
-| **Flow** | 蜂蜜倾倒 / 雾气弥散 (honey pour, mist diffusion) | 150-200 / 30-40 | Heavy damping, atmospheric travel | parallax, ambient morph, page transition, hero reveal |
-| **Thunk** | 锤击 / 重物落桌 (hammer strike, heavy object landing) | 400-500 / 5-10 | Immediate, weighty, percussive | hard-confirm select, weight-feedback, success thud |
-| **Bounce** | 橡皮球 / 弹簧床 (rubber ball, trampoline) | 300 / 8 | Playful overshoot, elastic | celebratory toast, kids/games, gamified confirm |
-| **Drift** | 氦气球 / 棉絮飘 (helium balloon, drifting cotton) | 100 / 25 | Slow buoyant float | meditation, dreamy reveal, idle ambient loop |
+| **Click** | magnet snap, latch, toggle | 350-400 / 10-15 | Quick decisive snap, low resistance | button press, modal entry, dropdown reveal, toggle |
+| **Slide** | pneumatic door closer, drawer damper | 250-300 / 20-25 | Smooth controlled travel, natural resistance | bottom sheet, accordion, drawer, FAB flyout |
+| **Flow** | honey pour, mist diffusion | 150-200 / 30-40 | Heavy damping, atmospheric travel | parallax, ambient morph, page transition, hero reveal |
+| **Thunk** | hammer strike, heavy object landing | 400-500 / 5-10 | Immediate, weighty, percussive | hard-confirm select, weight-feedback, success thud |
+| **Bounce** | rubber ball, trampoline | 300 / 8 | Playful overshoot, elastic | celebratory toast, kids/games, gamified confirm |
+| **Drift** | helium balloon, drifting cotton | 100 / 25 | Slow buoyant float | meditation, dreamy reveal, idle ambient loop |
 
 **Reasoning prompts (use these to pick an archetype):**
 - Is the material **heavy** (stone, metal, ceramic) or **light** (paper, fabric, mist)? Heavy → Thunk / Click; light → Drift / Flow.

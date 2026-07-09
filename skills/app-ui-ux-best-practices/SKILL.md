@@ -1,6 +1,6 @@
 ---
 name: app-ui-ux-best-practices
-description: "Comprehensive App UI/UX design best practices. Supports two tracks: Convention Track (adopt a proven design language for SaaS/utility products) and Innovation Track (multiple brand-driven design methodologies — Material Metaphor, archetype-driven, narrative-driven, cultural-semiotic — for brand-driven products). Use when users want to: (1) Define visual identity for a new product, (2) Create design specifications and tokens, (3) Establish UI component guidelines, (4) Build a cohesive design language, (5) Review UI/UX quality, (6) Refine existing designs, (7) Audit design quality. Triggers: 'design system', 'UI design', 'UX design', 'visual identity', 'design specs', 'design tokens', 'component guidelines', 'look and feel', 'app design', 'design refine', 'design audit', '视觉设计', '设计规范', '设计系统', 'UI最佳实践', 'UX最佳实践'."
+description: "Comprehensive App UI/UX design best practices. Supports two tracks: Convention Track (adopt a proven design language for SaaS/utility products) and Innovation Track (multiple brand-driven design methodologies — Material Metaphor, archetype-driven, narrative-driven, cultural-semiotic — for brand-driven products). Use when users want to: (1) Define visual identity for a new product, (2) Create design specifications and tokens, (3) Establish UI component guidelines, (4) Build a cohesive design language, (5) Review UI/UX quality, (6) Refine existing designs, (7) Audit design quality. Triggers: 'design system', 'UI design', 'UX design', 'visual identity', 'design specs', 'design tokens', 'component guidelines', 'look and feel', 'app design', 'design refine', 'design audit', 'visual design', 'design specification', 'UI best practices', 'UX best practices'."
 ---
 
 # App UI/UX Best Practices
@@ -35,7 +35,7 @@ Before exploring directions, derive the product's **register** from evidence —
 
 Rules:
 - **Every dial value must cite evidence** ("underground live venue → loud + raw + dense", "meditation companion → quiet + polished + sparse"). No dial may be set by habit or personal default. Quiet/polished is a fully legitimate outcome when the evidence earns it; so is loud/raw.
-- **Vague-word firewall**: mood adjectives — premium, refined, elegant, sophisticated, restrained, epic, literary, tasteful, 高级感, 精致, 克制, 史诗 — are never a justification. If one appears in the user's input or your own reasoning, translate it into dial values plus observable decisions (specific saturation, spacing, radius, motion values) before proceeding. See the translation table in `references/anti-patterns.md`.
+- **Vague-word firewall**: mood adjectives — premium, refined, elegant, sophisticated, restrained, epic, literary, tasteful — are never a justification. If one appears in the user's input or your own reasoning, translate it into dial values plus observable decisions (specific saturation, spacing, radius, motion values) before proceeding. See the translation table in `references/anti-patterns.md`.
 - **Fit before diversity**: when evidence clearly locks a register region (a rock band page, a funeral service, a toddler game), ALL direction options must sit inside that region and differentiate on the other axes. Do not average toward a middle register or "balance" the set with one polished-minimal option. Spread options across register levels only when the evidence is genuinely ambiguous.
 - Every downstream step — tokens, component recipes, motion, layout — takes its values from the derived register, not from a house default.
 
@@ -151,11 +151,11 @@ Present **2-3 distinct visual direction options** to the user. **Do NOT proceed 
 
 **HARD RULE — NO IMAGES IN OPTIONS:** Do NOT fetch, load, or embed any image during direction option presentation. Options are plain text only — direction name + keywords. This rule has no exceptions.
 
-**Output format**: All direction options MUST be wrapped in a single markdown blockquote (`>` prefix) with a bold title `> **视觉方向**`. The confirmation question goes OUTSIDE the blockquote.
+**Output format**: All direction options MUST be wrapped in a single markdown blockquote (`>` prefix) with a bold title `> **Visual Direction**`. The confirmation question goes OUTSIDE the blockquote.
 
 **Prescriptive template**:
 ```
-> **视觉方向**
+> **Visual Direction**
 >
 > A: {Direction name}
 > - Feel: {metaphor, ≤ 10 words}
@@ -173,7 +173,7 @@ Present **2-3 distinct visual direction options** to the user. **Do NOT proceed 
 > - Layout: ...
 > - Pages: ...
 
-{confirmation question, e.g., "喜欢哪个方向？"}
+{confirmation question, e.g., "Which direction do you prefer?"}
 ```
 
 **Card preparation (REQUIRED before generating the cards)**: For each direction, silently prepare the dense design decisions behind the visible card — what it feels like to use, what surfaces it evokes, what physical or emotional reference it draws from, how the IA / pages would actually flow, what kind of user it courts. This preparation must not appear in user-facing output, tool results, headings, or scratch prose. Distill the visible cards from that preparation. The preparation is the seed; the card is the harvest. Without it, the cards become 30-word stubs that produce flat downstream output.
@@ -182,7 +182,7 @@ Present **2-3 distinct visual direction options** to the user. **Do NOT proceed 
 
 **Innovation Track options**: Name the creative direction. The naming pattern is methodology-flexible — Material Metaphor uses "{material} x {environment}" (e.g., "Liquid Metal x Nordic Winter"); archetype-driven uses a character name; narrative-driven uses a scene phrase; cultural-semiotic uses a movement reference. Include Feel/Color/Texture/Motion/Layout/Pages keywords. Options should represent genuinely different aesthetic directions, not three flavors of one methodology.
 
-**Reference-informed options** (Scenario A-Ref): Options must be **anchored to the user's reference**. At least one option should stay close to the reference's visual style (e.g., "贴近参考" / "Reference-Faithful"). Other options should offer deliberate variations — modernize, warm up, simplify, or add personality — while still using the reference as the starting point. Do NOT propose options that completely ignore the reference.
+**Reference-informed options** (Scenario A-Ref): Options must be **anchored to the user's reference**. At least one option should stay close to the reference's visual style (e.g., "Reference-Faithful"). Other options should offer deliberate variations — modernize, warm up, simplify, or add personality — while still using the reference as the starting point. Do NOT propose options that completely ignore the reference.
 
 **Direction diversity requirement (CRITICAL)**: each direction must have its own **color identity and emotional character** — this is the PRIMARY differentiator. Directions should feel like completely different visual worlds, not lightness variants of the same palette. Anti-pattern (the #1 failure mode): organizing directions along the lightness axis — "one bright, one dark, one warm." Lightness follows from the color identity, not the other way around. Good differentiators: different accent hue families (coral vs emerald vs gold), different emotional registers (playful vs precise vs poetic), different material/texture feels (glossy metal vs raw ceramic vs crisp paper). If you catch yourself generating lightness variants instead of genuinely different color identities, start over.
 
@@ -369,7 +369,7 @@ Produce complete specification:
 
 **This section applies to the main agent's orchestration context only.** Sub-agents (`design-dna`, `visual-direction`) do not own the post-DNA flow -- they return to the caller after `generate_visual_dna` completes.
 
-**Main agent rule — do NOT ask for confirmation after visual DNA generation.** The post-visual-DNA flow is **non-interactive**: the main agent tells the user the visual specs are set and immediately proceeds to call `save_final_prd` (PRD) first, then `write_code(initial_single_page)` (preview page) — in that order, same turn, no text output between the two calls. Do NOT output a question like "需要先出一个核心页面看看整体感觉吗？" or "产品简报已保存...要继续吗？" — both calls are mandatory and uninterruptible.
+**Main agent rule — do NOT ask for confirmation after visual DNA generation.** The post-visual-DNA flow is **non-interactive**: the main agent tells the user the visual specs are set and immediately proceeds to call `save_final_prd` (PRD) first, then `write_code(initial_single_page)` (preview page) — in that order, same turn, no text output between the two calls. Do NOT output a question like "Want to see a core page first to check the overall feel?" or "Product brief saved... continue?" — both calls are mandatory and uninterruptible.
 
 ---
 

@@ -56,7 +56,7 @@ If the product/domain is missing and the answer would become generic, ask one sh
 
 ### 3. Synthesize The Direction
 
-**Derive the style register first (fit before diversity).** From the product's subject matter, audience, brand voice, and cultural context, set five observable dials: `Energy` (quiet↔loud), `Finish` (raw↔polished), `Density` (sparse↔dense), `Weight` (light↔heavy), `Seriousness` (playful↔solemn). Every dial value must cite evidence — no habit defaults in either direction: quiet/polished is fully legitimate when the evidence earns it, and a rock-venue or zine brief must actually land loud/raw instead of being smoothed into polished minimalism. Mood adjectives (premium, refined, restrained, epic, 高级感, 精致, 克制) are never a justification; translate them into observable values before using them (see `../app-ui-ux-best-practices/references/anti-patterns.md` § Vague-Word Firewall).
+**Derive the style register first (fit before diversity).** From the product's subject matter, audience, brand voice, and cultural context, set five observable dials: `Energy` (quiet↔loud), `Finish` (raw↔polished), `Density` (sparse↔dense), `Weight` (light↔heavy), `Seriousness` (playful↔solemn). Every dial value must cite evidence — no habit defaults in either direction: quiet/polished is fully legitimate when the evidence earns it, and a rock-venue or zine brief must actually land loud/raw instead of being smoothed into polished minimalism. Mood adjectives (premium, refined, restrained, epic, literary, tasteful) are never a justification; translate them into observable values before using them (see `../app-ui-ux-best-practices/references/anti-patterns.md` § Vague-Word Firewall).
 
 Then decide only the layers needed for the task:
 
@@ -100,7 +100,7 @@ If comparing options, make each option meaningfully different in structure and e
 - Every interactive component needs complete state thinking, even when the final answer only summarizes the direction.
 - "Premium" should come from hierarchy, spacing, material logic, and state quality, not extra glow.
 - No unearned register defaults, in either direction: do not deliver quiet-polished minimalism for a brief whose evidence says loud/raw, and do not force grit onto a product whose evidence says quiet. The failure is skipping derivation, not any specific register.
-- Mood adjectives are not rationale. Translate premium/refined/restrained/epic (高级感/精致/克制/史诗) into dial values plus observable decisions, or drop them.
+- Mood adjectives are not rationale. Translate premium/refined/restrained/epic into dial values plus observable decisions, or drop them.
 
 ## Optional Companion Skills
 

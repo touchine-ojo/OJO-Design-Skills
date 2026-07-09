@@ -44,7 +44,7 @@ Design audit operates in **documentation mode**: finds and reports issues with s
 
 Before checking quality details, verify the output is faithful to the evidence-derived register declaration (`Energy`, `Finish`, `Density`, `Weight`, `Seriousness`). This audit is **two-way** — there is no "correct" register, only faithful or unfaithful execution:
 
-- [ ] The declared register dials exist and cite evidence (product subject, audience, brand voice). Missing declaration with mood-adjective-only rationale ("premium feel", "克制高级") = **High**.
+- [ ] The declared register dials exist and cite evidence (product subject, audience, brand voice). Missing declaration with mood-adjective-only rationale ("premium feel", "just make it tasteful") = **High**.
 - [ ] Declared loud/raw/dense but delivered polished: soft shadows, 12-16px radii, generous whitespace, subtle gradients where the direction called for hard borders, collision, grain = **Critical** (the design was normalized back to the AI default register).
 - [ ] Declared quiet/polished/sparse but delivered gritty: noise overlays, torn edges, brutalist borders forced onto a product whose evidence says quiet = **Critical** (same failure, opposite direction).
 - [ ] Register consistency across screens: hero is loud/raw but settings/forms silently revert to generic polished defaults (or vice versa) without a deliberate quiet-zone decision = **High**.
