@@ -114,6 +114,34 @@ One-note palettes are the quieter version of AI slop: nothing is neon or obvious
 
 These families are not forbidden colors. They are forbidden as unchallenged whole-interface defaults. If the product or reference genuinely requires one, add a counter-hue accent, a neutral temperature shift, or material contrast so the screen does not read as a single preset theme.
 
+### ⛔ Unearned Register Default
+
+The register-level version of the same failure. Quiet/polished/sparse/restrained is a fully legitimate style register — meditation, luxury, archival, and civic products often earn it. What is banned is **skipping derivation**, in either direction:
+
+- ❌ Evidence points elsewhere but output lands quiet-polished anyway: an underground rock page delivered as minimal beige cards with soft shadows and generous whitespace; a horror game landing smoothed into frosted glass; a kids product flattened into thin-font "premium" neutrals.
+- ❌ Register values that cannot cite evidence and defend themselves only with mood adjectives ("it feels premium", "for a high-end look", "克制高级").
+- ❌ The reverse: forcing grain, torn edges, or brutalist borders onto a product whose evidence says quiet-polished, "to make it interesting".
+- ✅ Meditation app → quiet + polished + sparse, evidence cited. Correct.
+- ✅ Gig poster → loud + raw + dense, evidence cited. Correct.
+
+**Detection signals**: the design brief mentions loud/raw subject matter (live music, street culture, horror, industrial, protest, sports intensity) but the spec contains only polished-register vocabulary (soft shadows, 12-16px radius, generous whitespace, subtle gradients); or the rationale uses mood adjectives with no observable values behind them.
+
+### ⛔ Vague-Word Firewall (Translation Table)
+
+Mood adjectives are never a design justification. When one appears — in user input, upstream direction text, or your own reasoning — translate it into register dials plus observable values before using it. Examples:
+
+| Vague word | Must be translated into (examples — derive actual values from evidence) |
+|---|---|
+| premium / 高级感 | WHICH register? Quiet-luxury: high-contrast serif, hairline rules, 64px+ spacing, duotone palette. Or heavy-industrial: machined surfaces, hard 1px dividers, mono labels. "Premium" alone decides nothing. |
+| refined / 精致 | tolerance decisions: optical kerning, 4px-grid alignment, max 2 shadow levels, <=3 hues — not "make it tasteful" |
+| restrained / 克制 | saturation budget (e.g. accent <=10% surface, chroma <=0.12), motion amplitude cap, hue count cap |
+| epic / 史诗 | scale decisions: 96-144px display type, full-bleed hero, high-contrast lighting ratio — not a mood |
+| literary / 文学感 | serif family choice, measure 60-75ch, generous line-height 1.6-1.8, ink-on-paper palette |
+| edgy / raw / 粗糙 | which raw devices: halftone %, misregistration offset px, torn clip-path, hard shadow offset, rotation degrees |
+| clean / 简洁 | information-density tier + what is being removed and why; "clean" is an outcome, not an instruction |
+
+If a word cannot be translated into observable decisions, drop it from the rationale.
+
 ### ⛔ AI Style Detection Checklist
 
 **If your design has 3+ of these, DELETE AND RESTART:**
@@ -177,16 +205,6 @@ On app screens, AI slop often appears as the same active/accent color regardless
 - Claude orange for warmth, food, productivity, or "friendly" accents
 
 These colors are not individually banned; they are valid accent choices when used with restraint. They fail when they become automatic APP active/accent defaults without a brand reason, a saturation budget, and a supporting hue relationship. If you keep one, make the decision visible in the palette: tune saturation, give it a tonal active state, pair it with a distinct base/support color instead of coloring every important control the same way, and do not repeat them by habit across unrelated products.
-
----
-
-### APP Material Anti-Patterns (Challenge, Don't Flatten)
-
-Do not flatten every app into generic cards. High-quality component material is allowed and often necessary on mobile: translucent acrylic, frosted glass, dimensional media controls, rounded tactile cards, skeuomorphic knobs, vinyl discs, or physical album sleeves can make the product feel premium.
-
-The banned failure is **cheap plastic 3D**: glossy toy icons, fake bevels on every control, unclickable rendered images pretending to be buttons, or shiny surfaces with no interaction state. A valid material component is an **interactive surface** with clear hit area, focus state, pressed/lifted feedback, and a real implementation path (CSS tokens, generated/sourced asset, or Three.js for real geometry).
-
-**Rule:** base UI components stay restrained; expressive surfaces may be rich. If a component is not a signature product moment, keep its material quiet. If it is a signature moment, fully resolve the material instead of adding a random shadow, blur, or 3D-looking asset.
 
 ---
 

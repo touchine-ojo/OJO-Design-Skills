@@ -15,11 +15,29 @@ Create cohesive, professional UI design systems. For brand-driven products, pick
 
 **Surprise within coherence:** The interface should feel familiar enough to use without friction, yet surprising enough to be memorable. Avoid generic patterns while maintaining usability.
 
-**Tactile quality:** Users should feel an instinctive desire to touch the interface. Surfaces must convey material reality through shadow, depth, and texture.
+**Material honesty:** Surfaces must convey a believable material reality — velvet-smooth frosted glass and torn photocopied paper are equally valid. Fidelity to the direction's material, not universal smoothness or polish.
 
 **Real visual assets:** When a screen needs imagery, use real, subject-specific photographs, screenshots, product renders, map/media thumbnails, or generated bitmap assets that clearly depict the actual thing. Do not use gray boxes, "Image" labels, generic gradient blobs, fake stock smiles, or decorative SVGs as a substitute for real visual content.
 
-**Silence between notes:** Whitespace is not empty space. It is active, guiding attention and creating rhythm. Generous spacing is a feature, not a waste.
+**Rhythm over density dogma:** Whitespace and density are register decisions, not virtues. A quiet archival product earns silence; a gig poster earns collision and overlap. What matters is deliberate rhythm at the chosen density, in either direction.
+
+## Style Register Derivation (Fit Before Diversity)
+
+Before exploring directions, derive the product's **register** from evidence — the product's subject matter, audience, brand voice, cultural context, and goal. Classify internally along five observable dials:
+
+| Dial | Poles | Observable in |
+|---|---|---|
+| `Energy` | quiet ↔ loud | saturation budget, contrast, element collision |
+| `Finish` | raw ↔ polished | edge treatment, texture noise, alignment strictness |
+| `Density` | sparse ↔ dense | whitespace scale, layering, grid discipline |
+| `Weight` | light ↔ heavy | font weight, color-block area, shadow hardness |
+| `Seriousness` | playful ↔ solemn | corner radius, illustration language, motion amplitude |
+
+Rules:
+- **Every dial value must cite evidence** ("underground live venue → loud + raw + dense", "meditation companion → quiet + polished + sparse"). No dial may be set by habit or personal default. Quiet/polished is a fully legitimate outcome when the evidence earns it; so is loud/raw.
+- **Vague-word firewall**: mood adjectives — premium, refined, elegant, sophisticated, restrained, epic, literary, tasteful, 高级感, 精致, 克制, 史诗 — are never a justification. If one appears in the user's input or your own reasoning, translate it into dial values plus observable decisions (specific saturation, spacing, radius, motion values) before proceeding. See the translation table in `references/anti-patterns.md`.
+- **Fit before diversity**: when evidence clearly locks a register region (a rock band page, a funeral service, a toddler game), ALL direction options must sit inside that region and differentiate on the other axes. Do not average toward a middle register or "balance" the set with one polished-minimal option. Spread options across register levels only when the evidence is genuinely ambiguous.
+- Every downstream step — tokens, component recipes, motion, layout — takes its values from the derived register, not from a house default.
 
 ## Language Rule (HIGHEST PRIORITY - STRICTLY ENFORCED)
 
@@ -80,7 +98,7 @@ In General Skill Mode:
 - Do not force A/B/C, blockquotes, exact field labels, or confirmation questions.
 - Provide one decisive direction when the caller asks for one.
 - Compare 2-3 directions only when alternatives help the decision.
-- Still preserve the quality bar: anti-pattern avoidance, UI language, IA coupling, palette diversity, material fidelity, interaction states, and accessibility.
+- Still preserve the quality bar: anti-pattern avoidance, register fidelity, IA coupling, palette diversity, interaction states, and accessibility.
 
 ## Step 0: Product Type Assessment (Before Any Design)
 
@@ -170,16 +188,13 @@ Present **2-3 distinct visual direction options** to the user. **Do NOT proceed 
 
 **Diversity enforcement (HARD constraint)**: before emitting cards, silently classify each direction along `Layout Vibe` (EDITORIAL | UTILITY | [HYBRID]), `Corner Philosophy` (SHARP | SOFT | [SPATIAL]), `Accent Temperature` (WARM | COOL | [NEUTRAL] | CHROMATIC), and `Depth Strategy` (FLAT | [LAYERED] | IMMERSIVE). Then verify: (1) any two directions differ on ≥ 3 of the dimensions; (2) at least one direction is a pure-extreme combination (no bracketed values); (3) no bracketed middle value appears in more than one direction. These classifications are not user-facing card content and must never be printed as headings, checklists, tables, raw enum strings, or verification notes.
 
+**Register constraint (overrides diversity)**: also track the derived register dials (`Energy`, `Finish`, `Density`, `Weight`, `Seriousness`) per direction. When the evidence locks a register region, all options stay inside it — a rock-venue brief gets 2-3 loud/raw directions that differ in layout, color identity, and depth, never one loud option "balanced" by polished-minimal alternatives. Register diversity across options is allowed only when the evidence is genuinely ambiguous.
+
 **IA-Visual Coupling (CRITICAL)**: each direction commits to an information architecture and layout philosophy that belong to its visual world — not just colors on top of a generic page list. Different directions imply different Pages and Layouts (an editorial direction may collapse navigation into a single-column scroll; a utility direction may split into nav + content + detail panes). Anti-pattern: three directions sharing the same Pages and Layout values, differing only in color and texture. The `Pages` and `Layout` fields are also the seed for the downstream wireframe — they are not decorative.
 
 **Navigation shell selection (mobile/app — CRITICAL)**: when the platform is mobile/app, each direction must declare its **navigation shell** — `TabBar` (3-5 peer destinations) / `Stack` (drill-in) / `Hub` (launcher of tiles) / `Single-view` (one focused surface + sheets) / `Feed` (full-screen gesture cards) — coherent with its Layout Vibe and the product's real flow. Do NOT default every app to a bottom TabBar; a 5-tab bar is earned only by 3-5 genuinely peer destinations. See `write-mobile` "Navigation Shell Decision" for the implementation recipes. Across the 2-3 proposed directions the shell SHOULD vary where the product reasonably supports it.
 
-**APP UI Language Architecture (APP/Mobile)**: before choosing colors, material, or motion for an app, map the product to a primary UI language and at most one secondary UI language. This is an architecture layer, not a style label. Decide from the core use mode: consume, operate, create, monitor, transact, record, socialize, or ritualize.
-
-- Primary UI language examples: `media-first / player`, `feed / stream`, `utility / workbench`, `dashboard / command center`, `canvas / workspace`, `commerce / catalog`, `conversation / messaging`, `native / ritual flow`, `spatial / immersive`, `editorial / brand front`. The list is a vocabulary, not a menu to rotate blindly.
-- Secondary UI language is optional and scoped. Example: a music app can be primary `media-first / player` with secondary `feed / stream`; settings remain native/utility instead of inheriting the player treatment.
-- Break the decision into `layout language` (page structure), `content language` (what users scan first), `interaction language` (tap/gesture/command/creation), and `material language` (flat/glass/tactile/paper/metal/3D). Optimize color, material, and motion after this mapping.
-- The chosen language must say where the app is allowed to be expressive and where it stays quiet. It should prevent both template bento/editorial defaults and over-styled routine controls.
+**Mobile/App Structural Lens (APP/Mobile)**: alongside the navigation shell, decide which moments carry visual expression and which routine controls should stay quiet — keep concrete evidence such as player controls, feed rhythm, canvas edge tools, catalog comparison, or tactile media surfaces if the concept depends on them. This is a design lens, not a mandatory output schema: mention only compact, user-useful hints in Layout, Pages, or Motion. Do not print internal UI-language taxonomies, four-pillar schemas, fixed field names, or long implementation contracts.
 
 **Wait for user selection before continuing.**
 
@@ -204,10 +219,12 @@ Before any visual decisions, deeply understand:
 - Food app: "Delicious", "Warm", "Appetizing" — Too obvious, leads to Orange palette
 - Pet app: "Cute", "Fun", "Lively" — Too generic, leads to cliche design
 
-**Brand-First Examples:**
+**Brand-First Examples** (keywords may land anywhere on the register dials — soft, harsh, cheap, loud, and institutional feelings are all valid raw material):
 - Premium pet nutrition brand: "Scientific", "Precise", "Health Guardian" — Minimal white, clean typography
 - Late-night comfort food delivery: "Healing", "Solitude", "Gentle" — Warm neutrals, soft shadows
 - Gen-Z finance app: "Fearless", "Playful", "Control" — Bold colors, casual voice
+- Underground live-music community: "Distortion", "Sweat", "Cut-and-paste" — Halftone grain, hard borders, collage stacking
+- Civic services portal: "Certainty", "Zero decoration", "Procedural calm" — Daylight neutrals, rigid grid, quiet motion
 
 ---
 
@@ -265,18 +282,13 @@ For other methodologies, the Brief carries equivalent fields adapted to that met
 - Apply a saturation budget: base low chroma, supporting color low-to-medium chroma, accent medium chroma, high saturation reserved for peak moments such as success, rewards, or urgent status.
 - Tonal active states must use color + shape/weight/indicator, not hue alone: selected tabs can combine an 8-12% tint pill, icon/label weight shift, and a small indicator instead of a bright active icon.
 
-**APP Material Fidelity (APP/Mobile)**:
-- Base UI components stay restrained: navigation, settings rows, forms, and routine buttons should remain stable, readable, and low-noise. Restraint does NOT mean flat or material-less.
-- Put expressive surfaces on the product's high-value moments: player controls, album cards, feed cards, cover art, media scrubbers, bottom sheets, hero controls, or other signature interactions. These surfaces can be translucent, rounded, dimensional, tactile, or skeuomorphic when the product earns it.
-- Material decisions must be implementable, not just adjectives. Name the surface material, translucency/opacity, blur, rim highlight, bevel, shadow stack, luster/noise, and pressed/lifted states that make the component feel real.
-- Use CSS/Tailwind tokens first for glass, acrylic, paper, ceramic, soft rubber, metal, and elevated card materials. Use generated or sourced images for content assets and hard-to-code textures such as album art, vinyl grooves, paper grain, ticket stock, or cassette labels.
-- Three.js is allowed for high-value components, not only full-screen scenes. Use it when the component needs real geometry, perspective, reflection, inertia, or 3D rotation: a rotating play button, vinyl disc, knob, capsule switch, album sleeve, or sculptural CTA. Keep an accessible DOM control and a canvas fallback so the interface remains usable if WebGL fails.
-
 **Texture & Depth ("Secret Sauce")**: Noise/Grain overlays, Glass/Blur (`backdrop-blur`), Inner Shadows, Subtle Gradients, 1px borders with opacity
 
-**Micro-Detail Polish (Innovation Track)**: Surface Luster (highlight reflections), Tactile Depth (multi-layer shadows), Ambient Warmth (5-10% cross-temperature color)
+**Micro-Detail Finishing (Innovation Track)** — pick the vocabulary that matches the derived `Finish` dial:
+- *Polished register*: Surface Luster (highlight reflections), Tactile Depth (multi-layer shadows), Ambient Warmth (5-10% cross-temperature color)
+- *Raw register*: Torn/Deckled Edges (irregular clip-path or mask borders), Overexposed Grain (heavy noise, blown highlights), Misregistered Overprint (offset color layers, halftone dots), Tape/Staple Artifacts (collage fixings), Photocopy Distortion (ink bleed, streaks)
 
-Convention Track derives equivalent polish from reference system patterns.
+Convention Track derives equivalent finishing from reference system patterns.
 
 ---
 
@@ -312,7 +324,7 @@ See `references/component-recipe.md` for detailed examples.
 
 **Spring Physics Over Fixed Curves**: Button Press (`scale: 0.98`, `stiffness: 400`, `damping: 10`), Modal Open (`y: 0`, `opacity: 1`, `stiffness: 250`, `damping: 25`), Hover (`y: -2`, `stiffness: 300`, `damping: 15`)
 
-**Motion Polish**: Tactile button feedback (`active:scale-[0.98]`), staggered delays (30-50ms), ease-out/spring physics (never linear)
+**Motion Character (register-driven)**: Tactile button feedback (`active:scale-[0.98]`), staggered delays (30-50ms). Quiet/polished registers use ease-out/spring physics; loud/raw registers may use hard cuts, linear snaps (80-150ms), and stepped/frame-skip reveals as deliberate brand expression. What is banned is unconsidered default easing, not any specific curve.
 
 See `references/motion-system.md` for complete specifications.
 
@@ -320,17 +332,21 @@ See `references/motion-system.md` for complete specifications.
 
 ## Step 7: Layout Requirements
 
-**Grid System**: 12-column or 8pt spacing system. All components, gutters, margins multiples of 8px.
+**Grid System**: 12-column or 8pt spacing system. All components, gutters, margins multiples of 8px. In dense-poster register, deliberate off-grid rotation/overlap is allowed on top of a rigid underlying grid (see structural collision safety rules in `references/anti-patterns.md`).
 
 **Device Adaptability**: Flexible grids and breakpoints for all screen sizes (desktop, tablet, mobile).
 
 **Modular Construction**: Organize functional blocks into distinct modules. Column-based layouts for visual balance.
 
-**Negative Space & Rhythm**:
-- Macro-Whitespace: 64-120px vertical spacing between sections
-- Micro-Whitespace: Generous internal padding (content never touches borders)
+**Density & Rhythm (take the tier from the derived `Density` dial — no global default)**:
 
-**Breathing Room**: Low information density. Whitespace guides focus to primary CTA/key data.
+| Tier | Macro spacing (between sections) | Micro padding | Character |
+|---|---|---|---|
+| Sparse (editorial/archival) | 64-120px | Generous; content never touches borders | Whitespace guides focus to primary CTA/key data |
+| Standard (utility/consumer) | 32-64px | Comfortable; 16-24px internal padding | Balanced scanning rhythm |
+| Dense (poster/feed/workbench) | 8-32px, intentional collisions allowed | Tight; edge-to-edge bleeds and overlaps allowed | Energy through stacking; hierarchy via scale/weight/color instead of distance |
+
+Whichever tier applies, rhythm must be deliberate: dense means controlled collision with clear reading order, not accidental clutter; sparse means active whitespace, not emptiness.
 
 ---
 
@@ -371,6 +387,8 @@ Produce complete specification:
 **Dark Mode Backgrounds**: any dark background without purple tint (hue 260-300, saturation > 10%). Vary color temperature — neutral, warm, cool, or tinted darks are all acceptable. **Pure black (#000000)** is allowed for modern genres like Neo-brutalism or Spatial UI.
 
 **Do NOT use default Tailwind color names** — specify exact hex codes.
+
+**Unearned Register Default**: skipping evidence-based register derivation in either direction — defaulting to quiet-polished minimalism for a loud/raw brief, or forcing grit onto a product whose evidence says quiet. Quiet/polished with cited evidence is fully legitimate. See `anti-patterns.md` § Unearned Register Default.
 
 **Quality Standards**: Icons (same library, same style, same stroke weight 1.5-2px, 24x24 grid), Contrast (text/background >= 4.5:1), Body text (>= 14sp), Brand color (8-12% surface, EXEMPT: >30% allowed in Neo-brutalism/Marketing)
 
