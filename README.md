@@ -31,7 +31,7 @@ It is agent-agnostic and ships with a single installer that targets every major 
 
 ## Showcase
 
-The same brief, with and without these skills installed. *(Rows ②③ are placeholders — see [`docs/comparison-prompts.md`](./docs/comparison-prompts.md) to regenerate them.)*
+The same brief, with and without these skills installed.
 
 <table>
   <tr>
@@ -46,18 +46,10 @@ The same brief, with and without these skills installed. *(Rows ②③ are place
     <td colspan="2" align="center"><sub><b>① Overall look</b> — a brand-grounded layout with real photography vs. a generic gradient hero with "Image" placeholder boxes.</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="./docs/images/showcase-2-with.svg" alt="Component spec with OJO Skills" width="390"></td>
-    <td align="center"><img src="./docs/images/showcase-2-without.svg" alt="Component spec without OJO Skills" width="390"></td>
+    <td colspan="2" align="center"><img src="./docs/images/showcase-2-riot.gif" alt="Rock festival landing page with OJO Skills" width="720"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>② Component detail</b> — atomic Tailwind classes with the full 8-state model and spring physics vs. vague prose.</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./docs/images/showcase-3-innovation.svg" alt="Innovation Track output" width="390"></td>
-    <td align="center"><img src="./docs/images/showcase-3-convention.svg" alt="Convention Track output" width="390"></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><sub><b>③ Two-track coverage</b> — the same skill produces a dramatic brand store (Innovation) and a restrained SaaS utility (Convention).</sub></td>
+    <td colspan="2" align="center"><sub><b>② Rock festival</b> — a high-energy landing page with kinetic motion (drifting haze, swept spotlight, magnetic CTAs, infinite lineup marquee).</sub></td>
   </tr>
 </table>
 

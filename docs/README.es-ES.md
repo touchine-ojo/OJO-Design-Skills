@@ -31,7 +31,7 @@ Es agnóstico al agente e incluye un único instalador compatible con todos los 
 
 ## Vitrina
 
-El mismo brief, con y sin estas habilidades instaladas. *(Las filas ②③ son marcadores de posición — ver [`comparison-prompts.md`](./comparison-prompts.md) para regenerarlos.)*
+El mismo brief, con y sin estas habilidades instaladas.
 
 <table>
   <tr>
@@ -46,18 +46,10 @@ El mismo brief, con y sin estas habilidades instaladas. *(Las filas ②③ son m
     <td colspan="2" align="center"><sub><b>① Aspecto general</b> — un diseño con identidad de marca y fotografía real vs. un Hero con degradado genérico y cajas "Image" de marcador.</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-2-with.svg" alt="Especificación de componente con OJO Skills" width="390"></td>
-    <td align="center"><img src="../images/showcase-2-without.svg" alt="Especificación de componente sin OJO Skills" width="390"></td>
+    <td colspan="2" align="center"><img src="../images/showcase-2-riot.gif" alt="Landing page de festival de rock" width="720"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>② Detalle de componente</b> — clases atómicas de Tailwind con el modelo completo de 8 estados y física de resortes vs. prosa vaga.</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="../images/showcase-3-innovation.svg" alt="Salida de la Vía Innovadora" width="390"></td>
-    <td align="center"><img src="../images/showcase-3-convention.svg" alt="Salida de la Vía Convencional" width="390"></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><sub><b>③ Cobertura de dos vías</b> — la misma habilidad produce una tienda de marca dramática (Innovadora) y una utilidad SaaS contenida (Convencional).</sub></td>
+    <td colspan="2" align="center"><sub><b>② Festival de rock</b> — una landing page de alta energía con movimiento cinético (niebla a la deriva, foco barrido, CTA magnéticos, lineup infinito).</sub></td>
   </tr>
 </table>
 

@@ -31,7 +31,7 @@ OJO Design Skills는 AI 코딩 에이전트에게 진짜 디자인 결정을 내
 
 ## 쇼케이스
 
-동일한 브리프에 이 스킬을 설치했는지 여부의 비교. *(②③ 행은 자리표시자 —— [`comparison-prompts.md`](./comparison-prompts.md)에서 다시 생성할 수 있습니다.)*
+동일한 브리프에 이 스킬을 설치했는지 여부의 비교.
 
 <table>
   <tr>
@@ -46,18 +46,10 @@ OJO Design Skills는 AI 코딩 에이전트에게 진짜 디자인 결정을 내
     <td colspan="2" align="center"><sub><b>① 전체 인상</b> —— 브랜드에 뿌리를 둔 실사 레이아웃 vs. 뻔한 그라데이션 Hero와 "Image" 자리표시자.</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-2-with.svg" alt="스킬 사용 컴포넌트 사양" width="390"></td>
-    <td align="center"><img src="../images/showcase-2-without.svg" alt="스킬 미사용 컴포넌트 사양" width="390"></td>
+    <td colspan="2" align="center"><img src="../images/showcase-2-riot.gif" alt="록 페스티벌 랜딩 페이지" width="720"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>② 컴포넌트 세부</b> —— 원자적 Tailwind 클래스 + 완전한 8상태 모델 + 스프링 물리 vs. 모호한 산문.</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="../images/showcase-3-innovation.svg" alt="이노베이션 트랙 출력" width="390"></td>
-    <td align="center"><img src="../images/showcase-3-convention.svg" alt="컨벤션 트랙 출력" width="390"></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><sub><b>③ 두 트랙 적용 범위</b> —— 같은 스킬이 극적인 브랜드 스토어(이노베이션)와 절제된 SaaS 유틸리티(컨벤션)를 모두 생성할 수 있습니다.</sub></td>
+    <td colspan="2" align="center"><sub><b>② 록 페스티벌</b> —— 키네틱 모션(표류하는 헤이즈, 스포트라이트, 마그네틱 CTA, 무한 라인업)을 갖춘 고에너지 랜딩 페이지.</sub></td>
   </tr>
 </table>
 

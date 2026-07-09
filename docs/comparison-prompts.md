@@ -2,7 +2,7 @@
 
 The screenshots used in the README **Showcase** section are produced from the prompt pairs below. Each pair uses the **same product brief**; the only variable is whether the agent has the OJO Design Skills installed.
 
-Re-run these in any supported agent (Codex, Claude Code, ZCode, …) to regenerate the visuals. Replace the `docs/images/showcase-*.svg` placeholders with your real screenshots when ready — keep the filenames so the README links stay valid.
+Re-run these in any supported agent (Codex, Claude Code, ZCode, …) to regenerate the visuals. The current showcases use real screen recordings (`docs/images/showcase-*.gif`); replace them by saving new GIFs/screenshots with the same base filenames so the README links stay valid.
 
 ---
 
@@ -82,6 +82,6 @@ Demonstrates the methodology's breadth: one skill, two genuinely different visua
 ## Producing the screenshots
 
 1. Run each prompt pair in your agent.
-2. Capture the rendered result (browser screenshot, design export, or the generated page).
-3. Save as `docs/images/showcase-<n>-<label>.{png|jpg}` — keep the base name identical to the existing SVG so the README `![](…)` references stay correct.
-4. If you switch extensions (e.g. `.svg` → `.png`), update the five `README*.md` image links accordingly.
+2. Capture the rendered result (screen recording for motion, or screenshot for static).
+3. Save as `docs/images/showcase-<n>-<label>.{gif|png|jpg}` — keep the base name identical to the existing file so the README `<img>` references stay correct.
+4. If you switch extensions (e.g. `.gif` → `.png`), update the five `README*.md` image links accordingly.
