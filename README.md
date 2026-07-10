@@ -43,13 +43,7 @@ The same brief, with and without these skills installed.
     <td align="center"><img src="./docs/images/showcase-1-without.gif" alt="Coffee app home without OJO Skills" width="360"></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><sub><b>① Overall look</b> — a brand-grounded layout with real photography vs. a generic gradient hero with "Image" placeholder boxes.</sub></td>
-  </tr>
-  <tr>
     <td colspan="2" align="center"><img src="./docs/images/showcase-2-riot.gif" alt="Rock festival landing page with OJO Skills" width="720"></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><sub><b>② Rock festival</b> — a high-energy landing page with kinetic motion (drifting haze, swept spotlight, magnetic CTAs, infinite lineup marquee).</sub></td>
   </tr>
 </table>
 
