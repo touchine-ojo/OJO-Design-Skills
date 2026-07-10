@@ -53,6 +53,22 @@ El mismo brief, con y sin estas habilidades instaladas.
   </tr>
 </table>
 
+## Muestras de diseño
+
+Resultados adicionales producidos con estas habilidades instaladas — un producto, múltiples superficies.
+
+<table>
+  <tr>
+    <td align="center"><img src="../images/showcase-design-1.png" alt="Hero de landing page de marketing" width="320"></td>
+    <td align="center"><img src="../images/showcase-design.png" alt="Sección completa de landing page" width="320"></td>
+    <td align="center"><img src="../images/showcase-design-3.png" alt="Sección de características" width="320"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="../images/showcase-design-4.png" alt="Sección de características" width="320"></td>
+    <td align="center" colspan="2"><img src="../images/showcase-design-2.png" alt="Panel de analítica" width="640"></td>
+  </tr>
+</table>
+
 ## Inicio rápido
 
 Instala todas las habilidades con un solo comando — sustituye `<client>` por tu agente:

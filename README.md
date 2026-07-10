@@ -53,6 +53,22 @@ The same brief, with and without these skills installed.
   </tr>
 </table>
 
+## Design samples
+
+Additional output produced with these skills installed — one product, multiple surfaces.
+
+<table>
+  <tr>
+    <td align="center"><img src="./docs/images/showcase-design-1.png" alt="Marketing landing page hero" width="320"></td>
+    <td align="center"><img src="./docs/images/showcase-design.png" alt="Landing page full section" width="320"></td>
+    <td align="center"><img src="./docs/images/showcase-design-3.png" alt="Feature section" width="320"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./docs/images/showcase-design-4.png" alt="Feature section" width="320"></td>
+    <td align="center" colspan="2"><img src="./docs/images/showcase-design-2.png" alt="Analytics dashboard" width="640"></td>
+  </tr>
+</table>
+
 ## Quick start
 
 Install all skills with one command — replace `<client>` with your agent:

@@ -53,6 +53,22 @@ OJO Design Skills 是一个即插即用的技能包,让你的 AI 编程代理学
   </tr>
 </table>
 
+## 设计样例
+
+安装这些技能后产出的更多设计 —— 同一产品,多个界面。
+
+<table>
+  <tr>
+    <td align="center"><img src="../images/showcase-design-1.png" alt="营销落地页 Hero" width="320"></td>
+    <td align="center"><img src="../images/showcase-design.png" alt="落地页完整区块" width="320"></td>
+    <td align="center"><img src="../images/showcase-design-3.png" alt="功能区" width="320"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="../images/showcase-design-4.png" alt="功能区" width="320"></td>
+    <td align="center" colspan="2"><img src="../images/showcase-design-2.png" alt="数据分析仪表盘" width="640"></td>
+  </tr>
+</table>
+
 ## 快速开始
 
 用一条命令安装全部技能 —— 将 `<client>` 替换为你的代理:
