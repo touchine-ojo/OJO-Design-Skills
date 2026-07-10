@@ -57,17 +57,11 @@ OJO Design Skills는 AI 코딩 에이전트에게 진짜 디자인 결정을 내
 
 이 스킬을 설치한 후 제작한 추가 결과물 —— 하나의 제품, 여러 화면.
 
-<table>
-  <tr>
-    <td align="center"><img src="../images/showcase-design-1.png" alt="마케팅 랜딩 페이지 Hero" width="320"></td>
-    <td align="center"><img src="../images/showcase-design.png" alt="랜딩 페이지 전체 섹션" width="320"></td>
-    <td align="center"><img src="../images/showcase-design-3.png" alt="기능 섹션" width="320"></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="../images/showcase-design-4.png" alt="기능 섹션" width="320"></td>
-    <td align="center" colspan="2"><img src="../images/showcase-design-2.png" alt="분석 대시보드" width="640"></td>
-  </tr>
-</table>
+<p align="center"><img src="../images/showcase-design-1.png" alt="마케팅 랜딩 페이지 Hero"></p>
+<p align="center"><img src="../images/showcase-design.png" alt="랜딩 페이지 전체 섹션"></p>
+<p align="center"><img src="../images/showcase-design-3.png" alt="기능 섹션"></p>
+<p align="center"><img src="../images/showcase-design-4.png" alt="기능 섹션"></p>
+<p align="center"><img src="../images/showcase-design-2.png" alt="분석 대시보드"></p>
 
 ## 퀵 스타트
 

@@ -57,17 +57,11 @@ El mismo brief, con y sin estas habilidades instaladas.
 
 Resultados adicionales producidos con estas habilidades instaladas — un producto, múltiples superficies.
 
-<table>
-  <tr>
-    <td align="center"><img src="../images/showcase-design-1.png" alt="Hero de landing page de marketing" width="320"></td>
-    <td align="center"><img src="../images/showcase-design.png" alt="Sección completa de landing page" width="320"></td>
-    <td align="center"><img src="../images/showcase-design-3.png" alt="Sección de características" width="320"></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="../images/showcase-design-4.png" alt="Sección de características" width="320"></td>
-    <td align="center" colspan="2"><img src="../images/showcase-design-2.png" alt="Panel de analítica" width="640"></td>
-  </tr>
-</table>
+<p align="center"><img src="../images/showcase-design-1.png" alt="Hero de landing page de marketing"></p>
+<p align="center"><img src="../images/showcase-design.png" alt="Sección completa de landing page"></p>
+<p align="center"><img src="../images/showcase-design-3.png" alt="Sección de características"></p>
+<p align="center"><img src="../images/showcase-design-4.png" alt="Sección de características"></p>
+<p align="center"><img src="../images/showcase-design-2.png" alt="Panel de analítica"></p>
 
 ## Inicio rápido
 
