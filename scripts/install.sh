@@ -44,7 +44,7 @@ EOF
 }
 
 log() {
-  printf '[ojo-design-skills] %s\n' "$*"
+  printf '[ojo-design-skills] %s\n' "$*" >&2
 }
 
 die() {
