@@ -51,7 +51,6 @@ The same brief, with and without these skills installed.
 
 Additional output produced with these skills installed — one product, multiple surfaces.
 
-<p align="center"><img src="./docs/images/showcase-design-1.png" alt="Marketing landing page hero"></p>
 <p align="center"><img src="./docs/images/showcase-design.png" alt="Landing page full section"></p>
 <p align="center"><img src="./docs/images/showcase-design-3.png" alt="Feature section"></p>
 <p align="center"><img src="./docs/images/showcase-design-4.png" alt="Feature section"></p>
