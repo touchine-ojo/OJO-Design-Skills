@@ -2,6 +2,7 @@
 name: Documentation feedback
 about: Report an error or suggest a concrete improvement to the documentation.
 title: "docs: "
+labels: documentation
 ---
 
 ## Location
