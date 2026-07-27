@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and usage help
+    url: https://github.com/touchine-ojo/OJO-Design-Skills/discussions
+    about: Ask installation, usage, or early-stage design-methodology questions in Discussions.
+  - name: Security vulnerability report
+    url: https://github.com/touchine-ojo/OJO-Design-Skills/security/advisories/new
+    about: Report security vulnerabilities privately. Do not open a public issue.
