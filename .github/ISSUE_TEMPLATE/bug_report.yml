@@ -1,0 +1,68 @@
+name: Bug report
+description: Report a reproducible problem with a skill, the installer, or the documentation.
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Please remove private paths, credentials, and proprietary project details before submitting.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Skill guidance
+        - Installer
+        - Documentation
+        - Client compatibility
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: AI coding client and version
+      placeholder: "Codex desktop 1.2.3"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Operating system and shell
+      placeholder: "macOS 15.0, zsh"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the command, skill prompt, or minimum setup needed to reproduce the issue.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Paste relevant output or screenshots. Remove secrets and private information.
+    validations:
+      required: true
+  - type: dropdown
+    id: willing-to-help
+    attributes:
+      label: Are you willing to submit a pull request?
+      options:
+        - "Yes"
+        - "No"
+        - "I need guidance first"

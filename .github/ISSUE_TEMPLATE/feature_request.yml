@@ -1,0 +1,54 @@
+name: Feature request
+description: Suggest a focused improvement to a skill, supported client, installer, or documentation.
+title: "feature: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Proposals are strongest when they describe a real design or workflow problem, rather than a broad collection of prompts or style preferences.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Existing skill
+        - New skill
+        - Installer or client support
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Who experiences it, and what currently blocks them?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed outcome
+      description: Describe the expected behavior, decision, or artifact this change should enable.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Explain any existing skill, workaround, or external resource you considered.
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or references
+      description: Link to public examples only. Do not include private work or copyrighted material without permission.
+  - type: dropdown
+    id: willing-to-help
+    attributes:
+      label: Are you willing to contribute this?
+      options:
+        - "Yes"
+        - "No"
+        - "I need guidance first"

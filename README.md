@@ -157,11 +157,13 @@ Both tracks require a mandatory style-direction confirmation gate before produci
 
 ## Contributing
 
-Skills are plain Markdown files under `skills/<name>/SKILL.md` plus optional `references/` files. To add or refine a skill, edit the files and run the installer locally to verify:
+Skills are plain Markdown files under `skills/<name>/SKILL.md` plus optional `references/` files. To add or refine a skill, read the [contributing guide](./CONTRIBUTING.md), edit the relevant files, and run the installer locally to verify:
 
 ```bash
 ./scripts/install.sh --dry-run
 ```
+
+Use [GitHub Discussions](https://github.com/touchine-ojo/OJO-Design-Skills/discussions) for questions and early ideas, and [Issues](https://github.com/touchine-ojo/OJO-Design-Skills/issues) for reproducible bugs or focused feature requests. Security concerns should follow the private process in [SECURITY.md](./SECURITY.md).
 
 ## License
 
