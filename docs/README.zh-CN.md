@@ -39,14 +39,14 @@ OJO Design Skills 是一个即插即用的技能包,让你的 AI 编程代理学
     <th>未安装 OJO Skills</th>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-1-with.gif" alt="已安装时的咖啡 App 首页" width="360"></td>
-    <td align="center"><img src="../images/showcase-1-without.gif" alt="未安装时的咖啡 App 首页" width="360"></td>
+    <td align="center"><img src="./images/showcase-1-with.gif" alt="已安装时的咖啡 App 首页" width="360"></td>
+    <td align="center"><img src="./images/showcase-1-without.gif" alt="未安装时的咖啡 App 首页" width="360"></td>
   </tr>
   <tr>
     <td colspan="2" align="center"><sub><b>① 整体观感</b> —— 有品牌质感、使用真实摄影的布局 vs. 千篇一律的渐变 Hero 加 "Image" 灰块占位。</sub></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><img src="../images/showcase-2-riot.gif" alt="摇滚音乐节落地页" width="720"></td>
+    <td colspan="2" align="center"><img src="./images/showcase-2-riot.gif" alt="摇滚音乐节落地页" width="720"></td>
   </tr>
   <tr>
     <td colspan="2" align="center"><sub><b>② 摇滚音乐节</b> —— 高能量落地页,配以动感十足的动效(漂浮烟雾、扫光聚光灯、磁性 CTA、无限滚动阵容)。</sub></td>
@@ -57,11 +57,11 @@ OJO Design Skills 是一个即插即用的技能包,让你的 AI 编程代理学
 
 安装这些技能后产出的更多设计 —— 同一产品,多个界面。
 
-<p align="center"><img src="../images/showcase-design-1.png" alt="营销落地页 Hero"></p>
-<p align="center"><img src="../images/showcase-design.png" alt="落地页完整区块"></p>
-<p align="center"><img src="../images/showcase-design-3.png" alt="功能区"></p>
-<p align="center"><img src="../images/showcase-design-4.png" alt="功能区"></p>
-<p align="center"><img src="../images/showcase-design-2.png" alt="数据分析仪表盘"></p>
+<p align="center"><img src="./images/showcase-design-1.png" alt="营销落地页 Hero"></p>
+<p align="center"><img src="./images/showcase-design.png" alt="落地页完整区块"></p>
+<p align="center"><img src="./images/showcase-design-3.png" alt="功能区"></p>
+<p align="center"><img src="./images/showcase-design-4.png" alt="功能区"></p>
+<p align="center"><img src="./images/showcase-design-2.png" alt="数据分析仪表盘"></p>
 
 ## 快速开始
 

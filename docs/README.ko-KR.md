@@ -39,14 +39,14 @@ OJO Design Skills는 AI 코딩 에이전트에게 진짜 디자인 결정을 내
     <th>OJO Skills 미사용</th>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-1-with.gif" alt="스킬 사용 커피 앱 홈" width="360"></td>
-    <td align="center"><img src="../images/showcase-1-without.gif" alt="스킬 미사용 커피 앱 홈" width="360"></td>
+    <td align="center"><img src="./images/showcase-1-with.gif" alt="스킬 사용 커피 앱 홈" width="360"></td>
+    <td align="center"><img src="./images/showcase-1-without.gif" alt="스킬 미사용 커피 앱 홈" width="360"></td>
   </tr>
   <tr>
     <td colspan="2" align="center"><sub><b>① 전체 인상</b> —— 브랜드에 뿌리를 둔 실사 레이아웃 vs. 뻔한 그라데이션 Hero와 "Image" 자리표시자.</sub></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><img src="../images/showcase-2-riot.gif" alt="록 페스티벌 랜딩 페이지" width="720"></td>
+    <td colspan="2" align="center"><img src="./images/showcase-2-riot.gif" alt="록 페스티벌 랜딩 페이지" width="720"></td>
   </tr>
   <tr>
     <td colspan="2" align="center"><sub><b>② 록 페스티벌</b> —— 키네틱 모션(표류하는 헤이즈, 스포트라이트, 마그네틱 CTA, 무한 라인업)을 갖춘 고에너지 랜딩 페이지.</sub></td>
@@ -57,11 +57,11 @@ OJO Design Skills는 AI 코딩 에이전트에게 진짜 디자인 결정을 내
 
 이 스킬을 설치한 후 제작한 추가 결과물 —— 하나의 제품, 여러 화면.
 
-<p align="center"><img src="../images/showcase-design-1.png" alt="마케팅 랜딩 페이지 Hero"></p>
-<p align="center"><img src="../images/showcase-design.png" alt="랜딩 페이지 전체 섹션"></p>
-<p align="center"><img src="../images/showcase-design-3.png" alt="기능 섹션"></p>
-<p align="center"><img src="../images/showcase-design-4.png" alt="기능 섹션"></p>
-<p align="center"><img src="../images/showcase-design-2.png" alt="분석 대시보드"></p>
+<p align="center"><img src="./images/showcase-design-1.png" alt="마케팅 랜딩 페이지 Hero"></p>
+<p align="center"><img src="./images/showcase-design.png" alt="랜딩 페이지 전체 섹션"></p>
+<p align="center"><img src="./images/showcase-design-3.png" alt="기능 섹션"></p>
+<p align="center"><img src="./images/showcase-design-4.png" alt="기능 섹션"></p>
+<p align="center"><img src="./images/showcase-design-2.png" alt="분석 대시보드"></p>
 
 ## 퀵 스타트
 

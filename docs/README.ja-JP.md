@@ -39,14 +39,14 @@ OJO Design Skills は、AI コーディングエージェントに本当のデ�
     <th>OJO Skills なし</th>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-1-with.gif" alt="スキルありのコーヒーアプリホーム" width="360"></td>
-    <td align="center"><img src="../images/showcase-1-without.gif" alt="スキルなしのコーヒーアプリホーム" width="360"></td>
+    <td align="center"><img src="./images/showcase-1-with.gif" alt="スキルありのコーヒーアプリホーム" width="360"></td>
+    <td align="center"><img src="./images/showcase-1-without.gif" alt="スキルなしのコーヒーアプリホーム" width="360"></td>
   </tr>
   <tr>
     <td colspan="2" align="center"><sub><b>① 全体感</b> —— ブランドに根ざした実写のレイアウト vs. ありきたりのグラデーション Hero と "Image" プレースホルダー。</sub></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><img src="../images/showcase-2-riot.gif" alt="ロックフェスティバルのランディングページ" width="720"></td>
+    <td colspan="2" align="center"><img src="./images/showcase-2-riot.gif" alt="ロックフェスティバルのランディングページ" width="720"></td>
   </tr>
   <tr>
     <td colspan="2" align="center"><sub><b>② ロックフェスティバル</b> —— キネティックなモーション（漂うヘイズ、スポットライト、マグネティック CTA、無限ラインナップ）を備えた高エネルギーなランディングページ。</sub></td>
@@ -57,11 +57,11 @@ OJO Design Skills は、AI コーディングエージェントに本当のデ�
 
 これらのスキルをインストールして制作した追加成果物 —— ひつの製品、複数の画面。
 
-<p align="center"><img src="../images/showcase-design-1.png" alt="マーケティングランディングページ Hero"></p>
-<p align="center"><img src="../images/showcase-design.png" alt="ランディングページ全体セクション"></p>
-<p align="center"><img src="../images/showcase-design-3.png" alt="機能セクション"></p>
-<p align="center"><img src="../images/showcase-design-4.png" alt="機能セクション"></p>
-<p align="center"><img src="../images/showcase-design-2.png" alt="アナリティクスダッシュボード"></p>
+<p align="center"><img src="./images/showcase-design-1.png" alt="マーケティングランディングページ Hero"></p>
+<p align="center"><img src="./images/showcase-design.png" alt="ランディングページ全体セクション"></p>
+<p align="center"><img src="./images/showcase-design-3.png" alt="機能セクション"></p>
+<p align="center"><img src="./images/showcase-design-4.png" alt="機能セクション"></p>
+<p align="center"><img src="./images/showcase-design-2.png" alt="アナリティクスダッシュボード"></p>
 
 ## クイックスタート
 

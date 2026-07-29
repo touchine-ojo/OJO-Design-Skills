@@ -39,14 +39,14 @@ El mismo brief, con y sin estas habilidades instaladas.
     <th>Sin OJO Skills</th>
   </tr>
   <tr>
-    <td align="center"><img src="../images/showcase-1-with.gif" alt="Inicio de app de café con OJO Skills" width="360"></td>
-    <td align="center"><img src="../images/showcase-1-without.gif" alt="Inicio de app de café sin OJO Skills" width="360"></td>
+    <td align="center"><img src="./images/showcase-1-with.gif" alt="Inicio de app de café con OJO Skills" width="360"></td>
+    <td align="center"><img src="./images/showcase-1-without.gif" alt="Inicio de app de café sin OJO Skills" width="360"></td>
   </tr>
   <tr>
     <td colspan="2" align="center"><sub><b>① Aspecto general</b> — un diseño con identidad de marca y fotografía real vs. un Hero con degradado genérico y cajas "Image" de marcador.</sub></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><img src="../images/showcase-2-riot.gif" alt="Landing page de festival de rock" width="720"></td>
+    <td colspan="2" align="center"><img src="./images/showcase-2-riot.gif" alt="Landing page de festival de rock" width="720"></td>
   </tr>
   <tr>
     <td colspan="2" align="center"><sub><b>② Festival de rock</b> — una landing page de alta energía con movimiento cinético (niebla a la deriva, foco barrido, CTA magnéticos, lineup infinito).</sub></td>
@@ -57,11 +57,11 @@ El mismo brief, con y sin estas habilidades instaladas.
 
 Resultados adicionales producidos con estas habilidades instaladas — un producto, múltiples superficies.
 
-<p align="center"><img src="../images/showcase-design-1.png" alt="Hero de landing page de marketing"></p>
-<p align="center"><img src="../images/showcase-design.png" alt="Sección completa de landing page"></p>
-<p align="center"><img src="../images/showcase-design-3.png" alt="Sección de características"></p>
-<p align="center"><img src="../images/showcase-design-4.png" alt="Sección de características"></p>
-<p align="center"><img src="../images/showcase-design-2.png" alt="Panel de analítica"></p>
+<p align="center"><img src="./images/showcase-design-1.png" alt="Hero de landing page de marketing"></p>
+<p align="center"><img src="./images/showcase-design.png" alt="Sección completa de landing page"></p>
+<p align="center"><img src="./images/showcase-design-3.png" alt="Sección de características"></p>
+<p align="center"><img src="./images/showcase-design-4.png" alt="Sección de características"></p>
+<p align="center"><img src="./images/showcase-design-2.png" alt="Panel de analítica"></p>
 
 ## Inicio rápido
 
