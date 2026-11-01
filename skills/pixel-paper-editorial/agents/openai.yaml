@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pixel Paper Websites"
+  short_description: "White dotted sites with pixel stickers and bold cutout collage"
+  default_prompt: "Use $pixel-paper-editorial to build a simple responsive website with white dotted paper, original pixel stickers, and retro pixel UI. Where useful, add oversized type, a focal cutout, a torn-paper seam, a selection highlight, or a pill CTA. Adapt subjects and accent colors to the theme."

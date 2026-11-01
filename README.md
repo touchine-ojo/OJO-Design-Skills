@@ -8,7 +8,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/touchine-ojo/OJO-Design-Skills?style=flat&color=yellow)](https://github.com/touchine-ojo/OJO-Design-Skills/stargazers)
 [![Last commit](https://img.shields.io/github/last-commit/touchine-ojo/OJO-Design-Skills?color=brightgreen)](https://github.com/touchine-ojo/OJO-Design-Skills/commits/main)
 [![Clients](https://img.shields.io/badge/clients-7-success)](#quick-start)
-[![Skills](https://img.shields.io/badge/skills-1-orange)](#skills)
+[![Skills](https://img.shields.io/badge/skills-2-orange)](#skills)
 
 **English** · [简体中文](./docs/README.zh-CN.md) · [日本語](./docs/README.ja-JP.md) · [한국어](./docs/README.ko-KR.md) · [Español](./docs/README.es-ES.md)
 
@@ -140,6 +140,16 @@ The core methodology. Picks a track based on the product's value proposition, th
 - **Convention Track** — adopt one proven design language (Notion, Linear, Stripe, Things 3, …) for SaaS and utility products.
 - **Innovation Track** — build a brand-driven identity via Material Metaphor, archetype, narrative, or cultural-semiotic methods.
 - Ships with **9 reference files**: anti-patterns, visual tokens, component recipes, motion system, material metaphor, design audit, and more.
+
+### `pixel-paper-editorial`
+
+Create responsive websites with a white dotted background, original pixel art stickers, and retro pixel UI. Optional cutout collage heroes add oversized type, torn-paper seams, selection highlights, and pill calls to action while keeping the layout simple.
+
+- Preserves the pixel style while adapting sticker subjects, accent colors, and layout to the current theme.
+- Includes web implementation rules, general-purpose collage guidance, and visual reference analysis.
+- Supports runnable websites and explicitly requested concept-image previews.
+
+Example: `Use $pixel-paper-editorial to create a photography portfolio with a white dotted background and original pixel stickers. Keep the layout simple.`
 
 ## How it works
 
